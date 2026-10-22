@@ -234,7 +234,7 @@ If you utilize this simulation engine, scheduling formulations, or architecture 
 
 ```bibtex
 @misc{batteryless_sensor_sim_2026,
-  author = {Sathyaseelan, K.},
+  author = {Sathyaseelan, K, Sasikumar S , NandhaKumar S},
   title = {Adaptive Predictive Energy-Orchestrated Batteryless Environmental Sensor Node Simulation},
   year = {2026},
   publisher = {GitHub},

@@ -46,7 +46,7 @@ def show_chart(figure, **kwargs):
     return render_plotly_chart(figure, **kwargs)
 
 st.set_page_config(
-    page_title="Batteryless Sensor Node | Scientific Simulation Studio",
+    page_title="HelioSense | Batteryless Environmental Sensor Node",
     page_icon="☀️",
     layout="wide",
     initial_sidebar_state="auto"
@@ -261,8 +261,8 @@ st.markdown("""
     </svg>
   </div>
   <div class="hero-copy">
-    <h1>Batteryless Environmental Sensor Node</h1>
-    <p>Scientific Simulation Studio: Adjust solar irradiance, inspect intermediate sensor/circuit equations, and verify autonomous brownout prevention.</p>
+    <h1>HelioSense — Batteryless Sensor Node</h1>
+    <p>Perpetual Solar Air Quality Monitoring Studio: Real-time neural irradiance forecasting, pre-charge assurance (Eq. 1), and LASF opportunistic scheduling.</p>
   </div>
 </div>
 """, unsafe_allow_html=True)

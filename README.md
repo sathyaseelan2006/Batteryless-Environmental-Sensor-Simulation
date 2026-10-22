@@ -1,4 +1,4 @@
-# ☀️ Batteryless Environmental Sensor Node Simulation
+# ☀️ HelioSense — Batteryless Environmental Sensor Node Simulation
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit App](https://img.shields.io/badge/Streamlit-1.30%2B-FF4B4B.svg?logo=streamlit&logoColor=white)](https://streamlit.io/)

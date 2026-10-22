@@ -1,12 +1,14 @@
 # ☀️ HelioSense — Batteryless Environmental Sensor Node Simulation
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![Streamlit App](https://img.shields.io/badge/Streamlit-1.30%2B-FF4B4B.svg?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-heliosense.streamlit.app-FF4B4B.svg?logo=streamlit&logoColor=white)](https://heliosense.streamlit.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Zero Brownouts](https://img.shields.io/badge/Brownouts-0%20(Guaranteed)-success.svg)](#pre-charge-assurance)
 [![Edge AI](https://img.shields.io/badge/TinyML-On--Chip%20MLP-orange.svg)](#on-chip-neural-network-predictor)
 
 > **An end-to-end physical simulation of a perpetual, battery-free environmental air quality sensor node ($CO_2$, VOCs) powered exclusively by ambient solar harvesting, featuring on-chip neural weather forecasting, mathematical pre-charge guarantees, and Age-of-Information (LASF) scheduling.**
+> 
+> 🌐 **Try the Live Simulation:** [https://heliosense.streamlit.app/](https://heliosense.streamlit.app/)
 
 ---
 

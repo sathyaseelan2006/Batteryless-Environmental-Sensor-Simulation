@@ -66,6 +66,85 @@ flowchart TD
 
 ---
 
+## ⚡ AI-Driven Energy Management & Closed-Loop Self-Calibration
+
+![AI-Driven Energy Management & Closed-Loop Self-Calibration](modules/ai_energy_self_calibration_diagram.png)
+
+### 1. Where AI is Used (Physical Architecture & Hardware Placement)
+
+The AI engine is hosted **directly on-chip** within the ultra-low-power **STM32L476 (ARM Cortex-M4)** microcontroller operating at a regulated 1.8 V rail:
+
+```mermaid
+flowchart LR
+    subgraph Inputs ["Sensory Feedback Inputs"]
+        Cap["Supercapacitor
+(2.0 F / 5.0 V)"] -->|Kelvin Sense Line| ADC["12-bit ADC Channel
+(V_cap Sampling)"]
+        Light["BH1750 / OPT3001
+Solar Lux Sensor"] -->|I²C Digital Bus| Hist["14-Sample Feature Buffer
+(10 Trends + 4 Diurnal)"]
+    end
+
+    subgraph EdgeAI ["🧠 Central Edge AI Core (STM32L4 MCU)"]
+        ADC --> State["Instantaneous Energy Calculation
+E_stored = ½ C (V_cap² - V_min²)"]
+        Hist --> NN["On-Chip TinyML MLP Predictor
+(14 Inputs -> 12 ReLU -> 1 Output)
+Forecasts Irradiance Ĝ(t+30m)"]
+        State --> Logic{"Closed-Loop Pre-Charge & Peak Gate:
+1. E_stored ≥ 12.96 J (Eq. 1)
+2. Ĝ(t+30m) ≥ Peak Threshold"}
+        NN --> Logic
+    end
+
+    subgraph Actuation ["Power Gating & Actuation"]
+        Logic -- "PASS" --> GPIO["MCU GPIO Assert (HIGH)"]
+        Logic -- "FAIL" --> Lockout["Switch Locked OFF
+(Brownout Prevented)"]
+        GPIO --> MOSFET["TPS22918 N-MOSFET Load Switch
+(Leakage < 10 nA)"]
+        MOSFET --> Rail["Switched 3.3 V Power Rail
+(120 mW Switched Burst)"]
+        Rail --> MOX["MOX Gas Sensor Micro-Heater
+(300°C Thermal Desorption for 108 s)
+Resets Chemical Baseline Drift R₀"]
+    end
+```
+
+* **Hardware Placement:** Sits at the critical boundary between the analog energy buffer monitor (Kelvin-sensing ADC) and the power-gated actuator domain.
+* **Standby Footprint:** Consumes `< 0.2 mW` in deep sleep (Stop-2) and `< 5 μJ` per inference execution (`< 1.2 ms` compute burst at 80 MHz).
+* **Isolation Guarantee:** Separating the 1.8 V MCU core from the 3.3 V actuator rail prevents high-current heater pulses from inducing transient brownout glitches on the processor.
+
+---
+
+### 2. How AI is Used to Self-Calibrate Energy and Sensors
+
+The node implements a four-stage **closed-loop self-calibration mechanism**:
+
+#### Stage 1: Solar Harvest Energy Forecasting ($\hat{E}_{	ext{harvest}}$)
+The 14-input TinyML neural network ingests 5 hours of immediate localized weather dynamics ($I_{t-10} \dots I_{t-1}$) and diurnal cyclical history from the past 4 days ($I_t^{	ext{day}-1} \dots I_t^{	ext{day}-4}$) to project incoming irradiance $\hat{G}(t + 30	ext{m})$ with an accuracy of $	ext{MAE} = 38.2	ext{ W/m}^2$.
+
+#### Stage 2: Closed-Loop Pre-Charge Energy Assurance (Equation 1)
+Before authorizing the energy-intensive $120	ext{ mW}$ thermal cycle, the controller reads terminal capacitor voltage via the Kelvin ADC line and calculates available usable Joules:
+$$E_{	ext{stored}}(t) = rac{1}{2} C \left(V_{	ext{cap}}(t)^2 - V_{	ext{min}}^2ight)$$
+It verifies:
+$$E_{	ext{stored}}(t) \ge E_{	ext{need}} + E_{	ext{margin}}(	ext{AI})$$
+where $E_{	ext{need}} = 120	ext{ mW} 	imes 108	ext{ s} = 12.96	ext{ Joules}$. If stored energy is insufficient or if approaching night/storm is predicted, the MOSFET gate is strictly locked **OFF**, mathematically guaranteeing **zero brownouts**.
+
+#### Stage 3: Chemiresistive Baseline Drift Self-Calibration (Thermal Desorption)
+Chemiresistive metal-oxide gas sensors ($SnO_2$) undergo progressive surface contamination from ambient moisture, siloxanes, and volatile poisons, causing severe baseline resistance drift ($R_0(t)$) exceeding $200+	ext{ ppm}$ of measurement error over days.
+* When the AI forecasts an upcoming solar abundance peak ($\hat{G} \ge 450	ext{ W/m}^2$) **and** confirms pre-charge compliance, it commands the TPS22918 switch to heat the micro-hotplate to **$300^\circ	ext{C}$ for $108	ext{ seconds}$**.
+* High thermal energy accelerates Arrhenius desorption kinetics:
+  $$k_{	ext{desorb}} = A \exp\left(-rac{E_a}{k_B T_{	ext{hotplate}}}ight) \quad [T = 573.15	ext{ K}]$$
+* This completely burns off poisoning adsorbates, restoring baseline resistance to nominal ($R_0 	o R_0(0)$) and resetting measurement error from $>220	ext{ ppm}$ down to $<\pm 7.5	ext{ ppm}$.
+
+#### Stage 4: Dynamic Energy Allocation & Task Throttling (LASF)
+When sunlight dips below harvesting thresholds, the AI self-calibrates the node's power budget:
+* The $120	ext{ mW}$ thermal heater is safely deferred.
+* Sub-milliwatt continuous environmental sensing (SHT40 Temp/RH at $<0.1	ext{ mW}$) is prioritized via dynamic Least-Age-of-Information-Slack-First ($	ext{Slack} = 	ext{ASD} - 	ext{Age}$), maintaining uninterrupted telemetry.
+
+---
+
 ## 🔄 Decision Logic & Task Scheduling Flowchart
 
 The system runs a **discrete-time scheduling loop** ($T_{\text{adapt}} = 30\text{ mins}$) arbitrating between lightweight continuous sensing and heavy thermal calibration:

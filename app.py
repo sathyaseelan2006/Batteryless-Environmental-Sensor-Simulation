@@ -47,7 +47,7 @@ def show_chart(figure, **kwargs):
 
 st.set_page_config(
     page_title="HelioSense | Batteryless Environmental Sensor Node",
-    page_icon="☀️",
+    page_icon=str(Path(__file__).with_name("heliosense_logo.svg")),
     layout="wide",
     initial_sidebar_state="auto"
 )
@@ -256,8 +256,10 @@ for k, v in default_p.items():
 st.markdown("""
 <div class="hero">
   <div class="hero-icon">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>
+    <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+      <circle cx="45" cy="16" r="7" fill="#f6b94a"/>
+      <path d="M45 4v4m0 16v4m12-12h-4m-16 0h-4m20.49-8.49-2.83 2.83m-11.32 11.32-2.83 2.83m17.01 0-2.83-2.83m-11.32-11.32-2.83-2.83" stroke="#d68a13" stroke-width="2" stroke-linecap="round"/>
+      <path d="M12 27h40l-5 26H17l-5-26Z" fill="#176b55"/><path d="M21 28v24m11-24v24m11-24v24M14 36h36m-34 8h32" stroke="#b8e4d4" stroke-width="2"/>
     </svg>
   </div>
   <div class="hero-copy">
@@ -296,7 +298,7 @@ with st.container():
 
     with col_sun_slider:
         live_sunlight = st.slider(
-            "☀️ Solar Flux Irradiance G (W/m²)",
+            "Solar Flux Irradiance G (W/m²)",
             min_value=0,
             max_value=1300,
             value=int(st.session_state.get("cfg_peak_irradiance", 900.0)),
@@ -306,27 +308,27 @@ with st.container():
         )
         # Quick-set condition buttons
         btn1, btn2, btn3, btn4, btn5, btn6 = st.columns(6)
-        if btn1.button("☀️ Noon (1050)", use_container_width=True):
+        if btn1.button("Noon (1050)", use_container_width=True):
             st.session_state["live_sun_slider"] = 1050
             st.session_state["cfg_peak_irradiance"] = 1050.0
             st.rerun()
-        if btn2.button("⛅ Cloud (580)", use_container_width=True):
+        if btn2.button("Cloud (580)", use_container_width=True):
             st.session_state["live_sun_slider"] = 580
             st.session_state["cfg_peak_irradiance"] = 580.0
             st.rerun()
-        if btn3.button("🌧️ Storm (180)", use_container_width=True):
+        if btn3.button("Storm (180)", use_container_width=True):
             st.session_state["live_sun_slider"] = 180
             st.session_state["cfg_peak_irradiance"] = 180.0
             st.rerun()
-        if btn4.button("🏢 Shade (80)", use_container_width=True):
+        if btn4.button("Shade (80)", use_container_width=True):
             st.session_state["live_sun_slider"] = 80
             st.session_state["cfg_peak_irradiance"] = 80.0
             st.rerun()
-        if btn5.button("🌙 Night (0)", use_container_width=True):
+        if btn5.button("Night (0)", use_container_width=True):
             st.session_state["live_sun_slider"] = 0
             st.session_state["cfg_peak_irradiance"] = 0.0
             st.rerun()
-        if btn6.button("💡 Indoor (35)", use_container_width=True):
+        if btn6.button("Indoor (35)", use_container_width=True):
             st.session_state["live_sun_slider"] = 35
             st.session_state["cfg_peak_irradiance"] = 35.0
             st.rerun()
@@ -345,17 +347,17 @@ with st.container():
         kpi_a.metric("Illuminance", f"{calc_lux:,.0f} lx", help="Estimated terrestrial AM1.5 illuminance (1 W/m² ≈ 120 lux)")
         kpi_b.metric("Harvested Power", f"{calc_peak_mw:.1f} mW", help="Photovoltaic power delivered into supercapacitor via MPPT")
         if live_sunlight >= 600:
-            st.markdown("<span class='status-pill pill-active'>☀️ Solar Abundant · Fast Capacitor Recharge</span>", unsafe_allow_html=True)
+            st.markdown("<span class='status-pill pill-active'>Solar Abundant · Fast Capacitor Recharge</span>", unsafe_allow_html=True)
         elif live_sunlight >= 250:
-            st.markdown("<span class='status-pill pill-warning'>⛅ Moderate Light · Selective Gating Active</span>", unsafe_allow_html=True)
+            st.markdown("<span class='status-pill pill-warning'>Moderate Light · Selective Gating Active</span>", unsafe_allow_html=True)
         else:
-            st.markdown("<span class='status-pill pill-danger'>🌧️ Solar Deficit · Pre-Charge Lockout Guard</span>", unsafe_allow_html=True)
+            st.markdown("<span class='status-pill pill-danger'>Solar Deficit · Pre-Charge Lockout Guard</span>", unsafe_allow_html=True)
 
 # --------------------------------------------------------------------------
 # Sidebar: Advanced Scientific Parameters
 # --------------------------------------------------------------------------
 with st.sidebar:
-    st.header("⚙️ Node Hardware Architecture")
+    st.header("Node Hardware Architecture")
     st.caption("Adjust component physical parameters. Every change recalculates the trace.")
 
     with st.expander("Photovoltaic & Harvester", expanded=True):
@@ -378,7 +380,7 @@ with st.sidebar:
         calib_mta_h = st.slider("Calibration Max AoI (Hours)", 4.0, 72.0, float(st.session_state["cfg_calib_mta_h"]), 1.0, key="w_calib_mta")
         peak_threshold = st.slider("Peak Forecast Threshold", 0.2, 0.9, float(st.session_state["cfg_peak_threshold"]), 0.05, key="w_thresh")
 
-    st.button("🔄 Recalculate Simulation", type="primary", use_container_width=True)
+    st.button("Recalculate Simulation", type="primary", use_container_width=True)
 
 # --------------------------------------------------------------------------
 # Simulation Execution
@@ -412,7 +414,7 @@ except ValueError as e:
     cfg_error = str(e)
 
 if cfg_error:
-    st.error(f"⚠️ Physical Inconsistency: {cfg_error}")
+    st.error(f"Physical Inconsistency: {cfg_error}")
     st.stop()
 
 df = sim_result["trace"]
@@ -436,13 +438,14 @@ if st.session_state.get("timeline_hour", 0.0) > trace_max_hour:
 # --------------------------------------------------------------------------
 # Multi-Tab Interface Organization
 # --------------------------------------------------------------------------
-tab_live, tab_arch, tab_bench, tab_analysis, tab_science, tab_data = st.tabs([
-    "🕹️ Interactive 3D Model & Timeline",
-    "🏗️ Hardware Architecture & Schematic",
-    "🔬 Live Sensor & Circuit Workbench",
-    "📊 Comparative Analysis & Output Impact",
-    "📐 Scientific Formulas & Equations",
-    "📋 Full Telemetry Data"
+tab_live, tab_ai_calib, tab_arch, tab_bench, tab_analysis, tab_science, tab_data = st.tabs([
+    "Interactive 3D Model & Timeline",
+    "Energy Management & AI Self-Calibration",
+    "Hardware Architecture & Schematic",
+    "Live Sensor & Circuit Workbench",
+    "Comparative Analysis & Output Impact",
+    "Scientific Formulas & Equations",
+    "Full Telemetry Data"
 ])
 
 # ==========================================================================
@@ -481,7 +484,7 @@ with tab_live:
     with col_model_mode:
         model_display_mode = st.radio(
             "3D View Mode",
-            ["Standard Split View", "⛶ Fullscreen Cinema View (820px)"],
+            ["Standard Split View", "Fullscreen Cinema View (820px)"],
             horizontal=True,
             index=0,
             key="model_view_mode",
@@ -558,7 +561,7 @@ with tab_live:
         card_harvest = f"""
         <div class="subsystem-card" style="margin-bottom:10px;">
           <div class="subsystem-header">
-            <span class="subsystem-title">☀️ Solar Harvesting</span>
+            <span class="subsystem-title">Solar Harvesting</span>
             <span class="status-pill pill-active">{selected_trace['irradiance']:.0f} W/m²</span>
           </div>
           <div class="param-row"><span class="param-label">Illuminance</span><span class="param-val">{selected_trace['lux']:,.0f} Lux</span></div>
@@ -570,7 +573,7 @@ with tab_live:
         card_cap = f"""
         <div class="subsystem-card" style="margin-bottom:10px;">
           <div class="subsystem-header">
-            <span class="subsystem-title">⚡ Supercapacitor &amp; Rails</span>
+            <span class="subsystem-title">Supercapacitor &amp; Rails</span>
             <span class="status-pill pill-active">{selected_trace['soc_pct']:.1f}% SoC</span>
           </div>
           <div class="param-row"><span class="param-label">Capacitor Voltage V_cap</span><span class="param-val">{selected_trace['v_cap']:.2f} V</span></div>
@@ -583,8 +586,8 @@ with tab_live:
         card_sensor = f"""
         <div class="subsystem-card">
           <div class="subsystem-header">
-            <span class="subsystem-title">💨 Environmental Sensors</span>
-            <span class="status-pill {'pill-active' if is_calib else 'pill-neutral'}">{'🔥 Hotplate 300°C' if is_calib else 'Standby 25°C'}</span>
+            <span class="subsystem-title">Environmental Sensors</span>
+            <span class="status-pill {'pill-active' if is_calib else 'pill-neutral'}">{'Hotplate 300°C' if is_calib else 'Standby 25°C'}</span>
           </div>
           <div class="param-row"><span class="param-label">SHT40 Temp / Humidity</span><span class="param-val">{selected_trace['temp_c']:.1f} °C · {selected_trace['humidity_pct']:.0f}% RH</span></div>
           <div class="param-row"><span class="param-label">True Ambient CO₂</span><span class="param-val">{selected_trace['true_co2_ppm']:.0f} ppm</span></div>
@@ -596,7 +599,7 @@ with tab_live:
 
         if is_cinema:
             components.html(model_html, height=canvas_height, scrolling=False)
-            st.markdown(f"<h4 style='margin:16px 0 8px;font-size:1.05rem;color:#172b43;'>🔬 Detailed Subsystem Telemetry at {selected_time_label}</h4>", unsafe_allow_html=True)
+            st.markdown(f"<h4 style='margin:16px 0 8px;font-size:1.05rem;color:#172b43;'>Detailed Subsystem Telemetry at {selected_time_label}</h4>", unsafe_allow_html=True)
             col_t1, col_t2, col_t3 = st.columns(3)
             with col_t1:
                 st.markdown(card_harvest, unsafe_allow_html=True)
@@ -609,7 +612,7 @@ with tab_live:
             with model_col:
                 components.html(model_html, height=canvas_height, scrolling=False)
             with telemetry_col:
-                st.markdown("<h3 style='margin:0 0 8px;font-size:1.1rem;color:#172b43;'>🔬 Detailed Subsystem Telemetry</h3>", unsafe_allow_html=True)
+                st.markdown("<h3 style='margin:0 0 8px;font-size:1.1rem;color:#172b43;'>Detailed Subsystem Telemetry</h3>", unsafe_allow_html=True)
                 st.caption(f"Exact physical states at **{selected_time_label}**")
                 st.markdown(card_harvest + card_cap + card_sensor, unsafe_allow_html=True)
     else:
@@ -640,7 +643,7 @@ with tab_live:
     )
     show_chart(live_fig, use_container_width=True, theme=None, config={"displayModeBar": False})
 
-    with st.expander("📐 View Hardware Block Diagram Reference", expanded=False):
+    with st.expander("View Hardware Block Diagram Reference", expanded=False):
         arch_ref_img = Path(__file__).with_name("architecture_reference.png")
         if arch_ref_img.is_file():
             st.image(
@@ -648,10 +651,214 @@ with tab_live:
                 caption="Hardware Block Diagram Reference — Solar Harvesting, Supercapacitor Buffer, Dual Regulated Rails, SHT40, BH1750, and Switched MOX Gas Sensor",
                 use_container_width=True
             )
-            st.caption("💡 For the complete engineering breakdown, signal routing specifications, and component bill-of-materials, visit the **🏗️ Hardware Architecture & Schematic** tab.")
+            st.caption("For the complete engineering breakdown, signal routing specifications, and component bill-of-materials, visit the **Hardware Architecture & Schematic** tab.")
 
 # ==========================================================================
-# TAB 2: HARDWARE ARCHITECTURE & SCHEMATIC BREAKDOWN
+# TAB 2: ENERGY MANAGEMENT & AI SELF-CALIBRATION
+# ==========================================================================
+with tab_ai_calib:
+    st.markdown("""
+    <div class="arch-hero-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+        <span class="arch-tag">CORE INNOVATION: EDGE AI &amp; ENERGY MANAGEMENT</span>
+        <span style="font-size:0.8rem; color:#64748b; font-weight:600;">Autonomous Self-Calibrating Feedback Architecture</span>
+      </div>
+      <h2 style="margin:0 0 8px; font-size:1.45rem; color:#172b43;"> How AI is Used &amp; Where It Sits to Self-Calibrate Energy</h2>
+      <p style="margin:0; font-size:0.88rem; color:#53657b; line-height:1.6;">
+        Traditional batteryless IoT devices suffer from the <b>240× peak-to-average power paradox</b>: executing high-power chemiresistive gas sensor thermal cleaning (<b>120 mW</b>) from a miniature supercapacitor invariably crashes the device during cloudy or twilight periods. Our architecture solves this through an <b>on-chip TinyML neural predictor</b> coupled to <b>closed-loop pre-charge assurance</b> (Equation 1). Below is the physical hardware placement and the closed-loop self-calibration telemetry evidence.
+      </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Two Main Structural Cards: WHERE AI SITS vs HOW AI OPERATES
+    col_where, col_how = st.columns(2, gap="medium")
+
+    with col_where:
+        st.markdown("""
+        <div class="arch-card" style="min-height:280px;">
+          <div class="arch-card-header">
+            <span class="arch-card-title">WHERE AI is Located (Physical Hardware Layer)</span>
+            <span class="arch-card-part">STM32L4 · Cortex-M4</span>
+          </div>
+          <div class="arch-prop">
+            <b>1. Host Microcontroller Core:</b> Embedded directly on the ultra-low-power ARM Cortex-M4 MCU operating at 1.8V regulated rail (<0.2 mW sleep / 4.5 mW active inference).
+          </div>
+          <div class="arch-prop">
+            <b>2. Real-Time Sensory Inputs to AI:</b>
+            <ul style="margin:4px 0 6px 18px; padding:0; font-size:0.82rem; color:#475569;">
+              <li><b>12-bit ADC Kelvin Sense Line:</b> Samples raw supercapacitor voltage V_cap through a megaohm divider (&lt;25 nA leakage) to compute exact stored Joules: E_stored = ½ C (V_cap² - V_min²).</li>
+              <li><b>BH1750 / OPT3001 Lux Sensor:</b> I²C ambient solar illuminance reading feeding the feature pipeline.</li>
+              <li><b>14-Element Historical Buffer:</b> Ingests 10 consecutive 30-min samples (past 5h micro-trend) + 4 diurnal same-slot samples.</li>
+            </ul>
+          </div>
+          <div class="arch-prop">
+            <b>3. Physical Actuation &amp; Power Gating:</b>
+            MCU GPIO pin drives the gate of a <b>TPS22918 N-MOSFET Load Switch</b> (&lt;10 nA standby leakage), isolating the switched 3.3V rail from the 120 mW MOX hotplate until the AI authorizes execution.
+          </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col_how:
+        st.markdown("""
+        <div class="arch-card" style="min-height:280px;">
+          <div class="arch-card-header">
+            <span class="arch-card-title"> HOW AI Self-Calibrates Energy (Closed-Loop Engine)</span>
+            <span class="arch-card-part">TinyML MLP · 14→12→1</span>
+          </div>
+          <div class="arch-prop">
+            <b>1. Predictive Harvest Forecasting:</b>
+            The 14-input on-chip MLP neural network predicts incoming solar irradiance Ĝ(t + 30m) in &lt;1.2 ms (&lt;5 μJ), projecting future harvest influx Ê_harvest.
+          </div>
+          <div class="arch-prop">
+            <b>2. Closed-Loop Pre-Charge Energy Assurance (Eq. 1):</b>
+            Before closing the heater MOSFET, the AI checks:
+            <b>E_stored(t) ≥ E_need + E_margin(AI)</b>
+            where E_need = 120 mW × 108 s = 12.96 Joules. If stored energy is insufficient, the switch remains strictly locked OFF, guaranteeing <b>ZERO brownouts</b>.
+          </div>
+          <div class="arch-prop">
+            <b>3. Chemiresistive Baseline Drift Reset (Sensor Calibration):</b>
+            Surface poisons and moisture cause gas sensor baseline drift (R₀ drift &gt; 220 ppm error). The AI triggers the 300°C micro-hotplate pulse strictly during forecasted solar peaks, thermally desorbing contaminants and resetting error to &lt; ±7.5 ppm.
+          </div>
+          <div class="arch-prop">
+            <b>4. Dynamic Energy Quota Allocation (LASF):</b>
+            When energy is scarce, AI prioritizes sub-milliwatt sensing (&lt;0.1 mW) and defers heavy thermal loads safely until sunlight returns.
+          </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    # High-Resolution Physical System Representation Graphic
+    st.markdown("<h3 style='margin:22px 0 10px; color:#172b43;'>Physical System Representation &amp; Signal Routing</h3>", unsafe_allow_html=True)
+    st.caption("Detailed physical hardware schematic showing where the Edge AI sits between the ADC Kelvin Sense feedback line, energy storage buffer, and the power-gated MOX micro-hotplate.")
+
+    calib_diagram_path = Path(__file__).parent / "modules" / "ai_energy_self_calibration_diagram.png"
+    if calib_diagram_path.is_file():
+        st.image(str(calib_diagram_path), caption="Figure: Physical Hardware Architecture (Left) and Multi-Panel Scientific Validation Graphs of AI Energy Management & Self-Calibration (Right)", use_container_width=True)
+    else:
+        st.warning("Diagram image 'modules/ai_energy_self_calibration_diagram.png' not found.")
+
+    # 4 Interactive Plotly Telemetry Graphs
+    st.markdown("<h3 style='margin:24px 0 10px; color:#172b43;'>Interactive Telemetry Graphs: AI Self-Calibration in Action</h3>", unsafe_allow_html=True)
+    st.caption("Inspect live traces generated by sensor_sim.py showing the neural forecasting, closed-loop pre-charge lockout, and sensor drift reset.")
+
+    # Graph 1 & Graph 2 in two columns
+    g_col1, g_col2 = st.columns(2)
+
+    with g_col1:
+        st.markdown("<h4 style='font-size:1.0rem; margin:0 0 6px;'>1. AI Solar Irradiance Forecasting &amp; Peak-Gating Window</h4>", unsafe_allow_html=True)
+        fig_g1 = go.Figure()
+        fig_g1.add_trace(go.Scatter(x=df["hour"], y=df["irradiance"], name="Actual Solar Flux G(t)", line=dict(color="#f59e0b", width=2.2)))
+        fig_g1.add_trace(go.Scatter(x=df["hour"], y=df["nn_pred"], name="On-Chip TinyML Forecast G_pred(t+30m)", line=dict(color="#7c3aed", width=1.8, dash="dash")))
+        peak_th = float(cfg.peak_forecast_threshold * cfg.peak_irradiance)
+        fig_g1.add_hline(y=peak_th, line_dash="dot", line_color="#dc2626", annotation_text=f"Solar Peak Gating Threshold ({peak_th:.0f} W/m²)", annotation_position="top left")
+        fig_g1.update_layout(height=340, template="plotly_white", xaxis_title="Simulation Time (Hours)", yaxis_title="Solar Flux (W/m²)",
+                             legend=dict(orientation="h", y=1.14, x=0), margin=dict(t=35, b=25, l=45, r=15))
+        show_chart(fig_g1, use_container_width=True, theme=None)
+
+    with g_col2:
+        st.markdown("<h4 style='font-size:1.0rem; margin:0 0 6px;'>2. Closed-Loop Energy Buffer &amp; Eq. 1 Safety Gate</h4>", unsafe_allow_html=True)
+        fig_g2 = go.Figure()
+        fig_g2.add_trace(go.Scatter(x=df["hour"], y=df["e_stored_j"], name="Stored Usable Energy E_stored (Our AI Design)", line=dict(color="#0284c7", width=2.4)))
+        calib_req_j = float(cfg.calib_power_w * cfg.calib_duration_hours * 3600.0)
+        fig_g2.add_hline(y=calib_req_j, line_dash="dash", line_color="#dc2626", annotation_text=f"Eq. 1 Pre-Charge Threshold ({calib_req_j:.2f} J)", annotation_position="top right")
+        fig_g2.add_trace(go.Scatter(x=df["hour"], y=df["naive_soc_pct"] / 100.0 * summary["capacitor_energy_max_j"], name="Naive Fixed-Timer (Brownout Crashes)", line=dict(color="#ea580c", width=1.6, dash="dot")))
+
+        # Overlay execution dots
+        c_exec = events[(events.get("task", "") == "Calibration") & (events.get("event", "") == "executed")] if not events.empty else pd.DataFrame()
+        if not c_exec.empty:
+            e_slots = c_exec["slot"].values
+            fig_g2.add_trace(go.Scatter(
+                x=df.loc[e_slots, "hour"].values, y=df.loc[e_slots, "e_stored_j"].values, mode="markers",
+                marker=dict(symbol="star", size=12, color="#10b981", line=dict(color="#064e3b", width=1)),
+                name="AI-Scheduled 120 mW Calibration (Zero Brownouts)"
+            ))
+        fig_g2.update_layout(height=340, template="plotly_white", xaxis_title="Simulation Time (Hours)", yaxis_title="Stored Energy (Joules)",
+                             legend=dict(orientation="h", y=1.14, x=0), margin=dict(t=35, b=25, l=45, r=15))
+        show_chart(fig_g2, use_container_width=True, theme=None)
+
+    # Graph 3 & Graph 4 in two columns
+    g_col3, g_col4 = st.columns(2)
+
+    with g_col3:
+        st.markdown("<h4 style='font-size:1.0rem; margin:0 0 6px;'>3. Chemiresistive Sensor Drift Self-Calibration</h4>", unsafe_allow_html=True)
+        fig_g3 = go.Figure()
+        fig_g3.add_trace(go.Scatter(x=df["hour"], y=df["true_co2_ppm"], name="True Ground Truth Ambient CO₂", line=dict(color="#10b981", width=2.0)))
+        fig_g3.add_trace(go.Scatter(x=df["hour"], y=df["co2_measured_ppm"], name="Our Node (AI Energy-Calibrated, < ±7.5 ppm)", line=dict(color="#0284c7", width=2.0, dash="dash")))
+        fig_g3.add_trace(go.Scatter(x=df["hour"], y=df["co2_uncalibrated_ppm"], name="Uncalibrated Sensor (> 220 ppm Runaway Drift)", line=dict(color="#dc2626", width=1.6, dash="dot")))
+        fig_g3.update_layout(height=340, template="plotly_white", xaxis_title="Simulation Time (Hours)", yaxis_title="CO₂ Concentration (ppm)",
+                             legend=dict(orientation="h", y=1.14, x=0), margin=dict(t=35, b=25, l=45, r=15))
+        show_chart(fig_g3, use_container_width=True, theme=None)
+
+    with g_col4:
+        st.markdown("<h4 style='font-size:1.0rem; margin:0 0 6px;'>4. Dual-Rail Power Distribution (Peak-to-Average Resolution)</h4>", unsafe_allow_html=True)
+        fig_g4 = go.Figure()
+        fig_g4.add_trace(go.Scatter(x=df["hour"], y=df["p_harvest_mw"], name="Solar Harvested Power P_in (mW)", line=dict(color="#f59e0b", width=1.8)))
+        fig_g4.add_trace(go.Scatter(x=df["hour"], y=df["rail_1v8_mw"], name="Always-On 1.8V Rail (MCU & SHT40)", line=dict(color="#0284c7", width=1.8)))
+        fig_g4.add_trace(go.Scatter(x=df["hour"], y=df["rail_3v3_mw"], name="Switched 3.3V Rail (120 mW MOX Pulse)", line=dict(color="#ef4444", width=2.0)))
+        fig_g4.update_layout(height=340, template="plotly_white", xaxis_title="Simulation Time (Hours)", yaxis_title="Power (mW)",
+                             legend=dict(orientation="h", y=1.14, x=0), margin=dict(t=35, b=25, l=45, r=15))
+        show_chart(fig_g4, use_container_width=True, theme=None)
+
+    # Interactive AI Energy Self-Calibration Workbench / Decision Engine
+    st.markdown("<h3 style='margin:26px 0 10px; color:#172b43;'>Interactive AI Energy Self-Calibration Workbench</h3>", unsafe_allow_html=True)
+    st.markdown("""
+    Test any arbitrary operational state to observe how the AI self-calibrates energy allocation and decides whether to authorize or lock out the MOX micro-hotplate:
+    """)
+
+    ai_w1, ai_w2, ai_w3, ai_w4 = st.columns(4)
+    with ai_w1:
+        wb_sun = st.slider("Solar Irradiance G (W/m²)", 0, 1200, 750, step=25, key="ai_wb_sun")
+    with ai_w2:
+        wb_vcap = st.slider("Capacitor Voltage V_cap (V)", float(v_min), float(v_max), 4.4, step=0.05, key="ai_wb_v")
+    with ai_w3:
+        wb_cage = st.slider("Sensor Age (Hours Uncalibrated)", 0.0, 72.0, 24.0, step=1.0, key="ai_wb_cage")
+    with ai_w4:
+        wb_hour = st.slider("Time of Day (0–24h)", 0.0, 24.0, 12.0, step=0.5, key="ai_wb_hour")
+
+    # Evaluate instantaneous physics
+    ai_pt = evaluate_instant_physics(
+        irradiance_w_m2=float(wb_sun),
+        v_cap=float(wb_vcap),
+        calib_age_hours=float(wb_cage),
+        sensing_age_hours=1.0,
+        cfg=cfg,
+        hour_of_day=float(wb_hour)
+    )
+
+    # 4 Quick Metric Cards
+    ai_m1, ai_m2, ai_m3, ai_m4 = st.columns(4)
+    ai_m1.metric("Harvested Solar Power", f"{ai_pt['p_harvest_mw']:.1f} mW", delta=f"{ai_pt['lux']:,.0f} Lux")
+    ai_m2.metric("Supercapacitor Usable Joules", f"{ai_pt['e_stored_j']:.2f} J", delta=f"{ai_pt['soc_pct']:.1f}% SoC")
+    ai_m3.metric("Eq. 1 Pre-Charge Margin", f"{ai_pt['precharge_margin_j']:+.2f} J", delta="PASS" if ai_pt['precharge_calib_ok'] else "LOCKED OUT", delta_color="normal" if ai_pt['precharge_calib_ok'] else "inverse")
+    ai_m4.metric("Gas Sensor Drift Error", f"±{ai_pt['co2_error_ppm']:.1f} ppm", delta=f"Uncalib ±{ai_pt['co2_uncalib_error_ppm']:.1f} ppm", delta_color="inverse")
+
+    # Dynamic AI Decision Box
+    if ai_pt["precharge_calib_ok"] and ai_pt["forecast_gate_ok"]:
+        decision_box_color = "#15803d"
+        decision_bg = "#f0fdf4"
+        decision_title = "AI DECISION: CALIBRATION AUTHORIZED (MOSFET CLOSED · ZERO BROWNOUT SAFE)"
+    elif not ai_pt["precharge_calib_ok"]:
+        decision_box_color = "#b91c1c"
+        decision_bg = "#fef2f2"
+        decision_title = "AI DECISION: CALIBRATION LOCKED OUT BY EQ. 1 (PREVENTS BROWNOUT CRASH)"
+    else:
+        decision_box_color = "#b45309"
+        decision_bg = "#fffbeb"
+        decision_title = "AI DECISION: DEFERRED FOR SOLAR PEAK (WAITING FOR IRRADIANCE ABUNDANCE)"
+
+    st.markdown(f"""
+    <div style="background:{decision_bg}; border:1.5px solid {decision_box_color}; border-radius:10px; padding:16px 20px; margin-top:14px;">
+      <h4 style="margin:0 0 6px; color:{decision_box_color}; font-size:1.0rem;">{decision_title}</h4>
+      <p style="margin:0; font-size:0.86rem; color:#1e293b; line-height:1.55;">
+        <b>AI Self-Calibration Reasoning:</b> {ai_pt['decision_note']}
+      </p>
+      <p style="margin:6px 0 0; font-size:0.84rem; color:#475569;">
+        <b>Contrast with Traditional Fixed Timer:</b> {ai_pt['naive_outcome']}
+      </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+# ==========================================================================
+# TAB 3: HARDWARE ARCHITECTURE & SCHEMATIC BREAKDOWN
 # ==========================================================================
 with tab_arch:
     st.markdown("""
@@ -688,15 +895,15 @@ with tab_arch:
     """, unsafe_allow_html=True)
 
     # Detailed Subsystem Cards
-    st.markdown("<h3 style='margin:20px 0 10px; color:#172b43;'>🔬 Detailed Subsystem Engineering Breakdown</h3>", unsafe_allow_html=True)
-    
+    st.markdown("<h3 style='margin:20px 0 10px; color:#172b43;'>Detailed Subsystem Engineering Breakdown</h3>", unsafe_allow_html=True)
+
     col_a1, col_a2 = st.columns(2, gap="medium")
 
     with col_a1:
         st.markdown("""
         <div class="arch-card">
           <div class="arch-card-header">
-            <span class="arch-card-title">☀️ 1. Solar Photovoltaic (PV) Panel</span>
+            <span class="arch-card-title"> 1. Solar Photovoltaic (PV) Panel</span>
             <span class="arch-card-part">10 cm² · 5.0V</span>
           </div>
           <div class="arch-prop"><b>Function:</b> Primary energy transducer harvesting ambient sunlight from 0 to 1200 W/m² (AM1.5 terrestrial spectrum).</div>
@@ -709,7 +916,7 @@ with tab_arch:
         st.markdown("""
         <div class="arch-card">
           <div class="arch-card-header">
-            <span class="arch-card-title">⚡ 2. Energy Harvester PMIC</span>
+            <span class="arch-card-title"> 2. Energy Harvester PMIC</span>
             <span class="arch-card-part">TI BQ25570</span>
           </div>
           <div class="arch-prop"><b>Function:</b> Nanopower boost charger with embedded Maximum Power Point Tracking (MPPT) optimized for high-impedance micro-energy sources.</div>
@@ -722,7 +929,7 @@ with tab_arch:
         st.markdown("""
         <div class="arch-card">
           <div class="arch-card-header">
-            <span class="arch-card-title">🔋 3. Supercapacitor Energy Reservoir</span>
+            <span class="arch-card-title"> 3. Supercapacitor Energy Reservoir</span>
             <span class="arch-card-part">2.0 F / 5.0 V</span>
           </div>
           <div class="arch-prop"><b>Function:</b> Primary energy storage buffer replacing consumable chemical batteries, enabling maintenance-free continuous operation.</div>
@@ -735,7 +942,7 @@ with tab_arch:
         st.markdown("""
         <div class="arch-card">
           <div class="arch-card-header">
-            <span class="arch-card-title">📐 4. Real-Time V_cap Analog Sensing Line</span>
+            <span class="arch-card-title"> 4. Real-Time V_cap Analog Sensing Line</span>
             <span class="arch-card-part">Blue Dashed Line · 12-bit ADC</span>
           </div>
           <div class="arch-prop"><b>Function:</b> Dedicated analog feedback sense line routing raw supercapacitor voltage (2.2V–5.0V) into an internal ADC channel of the STM32L4 MCU.</div>
@@ -748,7 +955,7 @@ with tab_arch:
         st.markdown("""
         <div class="arch-card">
           <div class="arch-card-header">
-            <span class="arch-card-title">🔌 5. Dual Power Rails &amp; Regulators</span>
+            <span class="arch-card-title"> 5. Dual Power Rails &amp; Regulators</span>
             <span class="arch-card-part">1.8V LDO &amp; 3.3V LDO/Buck</span>
           </div>
           <div class="arch-prop"><b>1.8V LDO Rail:</b> Powers the STM32L4 MCU core and SHT40 temperature/humidity sensor. Operating at 1.8V drastically reduces dynamic CMOS power consumption (P ∝ C·V²·f) and supports sub-microamp deep-sleep modes.</div>
@@ -760,7 +967,7 @@ with tab_arch:
         st.markdown("""
         <div class="arch-card">
           <div class="arch-card-header">
-            <span class="arch-card-title">🧠 6. Ultra-Low-Power MCU</span>
+            <span class="arch-card-title"> 6. Ultra-Low-Power MCU</span>
             <span class="arch-card-part">STM32L4 (ARM Cortex-M4)</span>
           </div>
           <div class="arch-prop"><b>Role:</b> Central brain executing predictive ML inference and dynamic task arbitration.</div>
@@ -773,7 +980,7 @@ with tab_arch:
         st.markdown("""
         <div class="arch-card">
           <div class="arch-card-header">
-            <span class="arch-card-title">💨 7. MOX Gas Sensor &amp; MOSFET Load Switch</span>
+            <span class="arch-card-title"> 7. MOX Gas Sensor &amp; MOSFET Load Switch</span>
             <span class="arch-card-part">TPS22918 + MQ-135 / SGP30</span>
           </div>
           <div class="arch-prop"><b>Sensing Physics:</b> Chemiresistive SnO₂ metal-oxide semiconductor detecting volatile organic compounds (VOCs) and CO₂ equivalents via surface oxygen chemisorption.</div>
@@ -786,7 +993,7 @@ with tab_arch:
         st.markdown("""
         <div class="arch-card">
           <div class="arch-card-header">
-            <span class="arch-card-title">📡 8. Environmental Sensors &amp; Telemetry</span>
+            <span class="arch-card-title"> 8. Environmental Sensors &amp; Telemetry</span>
             <span class="arch-card-part">SHT40 · BH1750 · Ra-02 LoRa</span>
           </div>
           <div class="arch-prop"><b>SHT40 (Sensirion):</b> Ultra-low-power I²C temperature (±0.2°C) and relative humidity (±1.8% RH) sensor (0.5 μW avg). Provides ambient compensation for gas readings.</div>
@@ -796,8 +1003,8 @@ with tab_arch:
         """, unsafe_allow_html=True)
 
     # Architectural Specifications Table
-    st.markdown("<h3 style='margin:22px 0 10px; color:#172b43;'>📋 Subsystem Interconnect &amp; Electrical Specifications</h3>", unsafe_allow_html=True)
-    
+    st.markdown("<h3 style='margin:22px 0 10px; color:#172b43;'>Subsystem Interconnect &amp; Electrical Specifications</h3>", unsafe_allow_html=True)
+
     spec_data = [
         {"Subsystem": "Solar Harvesting", "Component": "10 cm² Monocrystalline PV", "Power Rail": "0.5V – 5.0V DC", "Quiescent Power": "0 mW", "Peak Power": "150–200 mW", "Interface": "Analog DC", "Role": "Ambient solar photon-to-electron energy transducer"},
         {"Subsystem": "Energy Harvester PMIC", "Component": "TI BQ25570 MPPT PMIC", "Power Rail": "Raw Harvester Input", "Quiescent Power": "< 500 nA (330 mV cold start)", "Peak Power": "Self-powered (92% eff.)", "Interface": "Analog Boost", "Role": "Maximum Power Point Tracking & supercapacitor charging"},
@@ -817,7 +1024,7 @@ with tab_arch:
     # Brownout Prevention Architecture Flow
     st.markdown("""
     <div class="equation-box" style="margin-top:20px;">
-      <h4 style="color:#176b55; font-size:1.05rem;">🛡️ How This Architecture Eliminates Brownouts (End-to-End Orchestration Flow)</h4>
+      <h4 style="color:#176b55; font-size:1.05rem;">How This Architecture Eliminates Brownouts (End-to-End Orchestration Flow)</h4>
       <p style="margin-bottom:8px;">
         Conventional fixed-timer nodes suffer repeated brownouts because they energize the 120 mW MOX heater unconditionally, crashing whenever sunlight dips. In our architecture, the hardware and software operate as a tightly coupled feedback loop:
       </p>
@@ -838,7 +1045,7 @@ with tab_arch:
 # TAB 2: LIVE SENSOR & CIRCUIT WORKBENCH (INSTANT PHYSICS EVALUATOR)
 # ==========================================================================
 with tab_bench:
-    st.markdown("### 🔬 Instant Scientific Physics &amp; Sensor Evaluator")
+    st.markdown("###  Instant Scientific Physics &amp; Sensor Evaluator")
     st.markdown("""
     Evaluate any arbitrary operating point with **100% scientific determinism**.
     Adjust the live sliders to test how variations in sunlight, capacitor voltage, and sensor age affect electrical power distribution, gas sensor drift, and LASF scheduler arbitration.
@@ -846,13 +1053,13 @@ with tab_bench:
 
     w_col1, w_col2, w_col3, w_col4 = st.columns(4)
     with w_col1:
-        test_sun = st.slider("☀️ Solar Irradiance G (W/m²)", 0, 1200, int(selected_trace["irradiance"]), step=20, key="bench_sun")
+        test_sun = st.slider("Solar Irradiance G (W/m²)", 0, 1200, int(selected_trace["irradiance"]), step=20, key="bench_sun")
     with w_col2:
-        test_vcap = st.slider("⚡ Capacitor Voltage V_cap (V)", float(v_min), float(v_max), float(selected_trace["v_cap"]), step=0.05, key="bench_v")
+        test_vcap = st.slider("Capacitor Voltage V_cap (V)", float(v_min), float(v_max), float(selected_trace["v_cap"]), step=0.05, key="bench_v")
     with w_col3:
-        test_calib_age = st.slider("⏳ Time Since Calibration (Hours)", 0.0, 72.0, float(selected_trace["calibration_age_h"]), step=1.0, key="bench_cage")
+        test_calib_age = st.slider("Time Since Calibration (Hours)", 0.0, 72.0, float(selected_trace["calibration_age_h"]), step=1.0, key="bench_cage")
     with w_col4:
-        test_hour = st.slider("🕐 Diurnal Hour of Day (0-24h)", 0.0, 24.0, float(time_in_day), step=0.5, key="bench_hour")
+        test_hour = st.slider("Diurnal Hour of Day (0-24h)", 0.0, 24.0, float(time_in_day), step=0.5, key="bench_hour")
 
     # Evaluate instant physics
     pt = evaluate_instant_physics(
@@ -872,7 +1079,7 @@ with tab_bench:
         st.markdown(f"""
         <div class="subsystem-card">
           <div class="subsystem-header">
-            <span class="subsystem-title">☀️ Solar PV Harvester</span>
+            <span class="subsystem-title">Solar PV Harvester</span>
             <span class="status-pill pill-active">{pt['p_harvest_mw']:.1f} mW</span>
           </div>
           <div class="param-row"><span class="param-label">Input Irradiance G</span><span class="param-val">{pt['irradiance_w_m2']:.0f} W/m²</span></div>
@@ -888,7 +1095,7 @@ with tab_bench:
         st.markdown(f"""
         <div class="subsystem-card">
           <div class="subsystem-header">
-            <span class="subsystem-title">⚡ Supercapacitor &amp; Rails</span>
+            <span class="subsystem-title">Supercapacitor &amp; Rails</span>
             <span class="status-pill pill-active">{pt['soc_pct']:.1f}% SoC</span>
           </div>
           <div class="param-row"><span class="param-label">Capacitor Voltage</span><span class="param-val">{pt['v_cap']:.2f} V</span></div>
@@ -904,7 +1111,7 @@ with tab_bench:
         st.markdown(f"""
         <div class="subsystem-card">
           <div class="subsystem-header">
-            <span class="subsystem-title">💨 Sensors &amp; Drift</span>
+            <span class="subsystem-title">Sensors &amp; Drift</span>
             <span class="status-pill {'pill-active' if pt['hotplate_temp_c'] > 100 else 'pill-neutral'}">{'300°C Active' if pt['hotplate_temp_c'] > 100 else '25°C Standby'}</span>
           </div>
           <div class="param-row"><span class="param-label">SHT40 Temp / Humidity</span><span class="param-val">{pt['temp_c']:.1f} °C · {pt['humidity_pct']:.0f}% RH</span></div>
@@ -922,7 +1129,7 @@ with tab_bench:
         st.markdown(f"""
         <div class="subsystem-card">
           <div class="subsystem-header">
-            <span class="subsystem-title">🧠 Orchestrator Decision</span>
+            <span class="subsystem-title">Orchestrator Decision</span>
             <span class="status-pill {pre_status}">{'PASS' if pt['precharge_calib_ok'] else 'LOCKED OUT'}</span>
           </div>
           <div class="param-row"><span class="param-label">Eq. 1 Pre-Charge Margin</span><span class="param-val">{pt['precharge_margin_j']:+.2f} J</span></div>
@@ -947,7 +1154,7 @@ with tab_bench:
 # TAB 3: COMPARATIVE ANALYSIS & OUTPUT IMPACT
 # ==========================================================================
 with tab_analysis:
-    st.markdown("### 📊 System Resilience &amp; Measurement Accuracy Impact")
+    st.markdown("###  System Resilience &amp; Measurement Accuracy Impact")
     st.caption("Side-by-side comparison of our patented predictive architecture versus conventional fixed-timer nodes under identical environmental conditions.")
 
     k1, k2, k3, k4 = st.columns(4)
@@ -1013,7 +1220,7 @@ with tab_analysis:
 # TAB 4: SCIENTIFIC PHYSICS & FORMULATIONS
 # ==========================================================================
 with tab_science:
-    st.markdown("### 📐 Scientific Formulations &amp; Mathematical Derivations")
+    st.markdown("###  Scientific Formulations &amp; Mathematical Derivations")
     st.markdown("""
     All physical processes in this simulation are derived from first-principles electromagnetic, thermodynamic, and semiconductor equations.
     Below are the explicit mathematical definitions implemented in `sensor_sim.py`.
@@ -1024,7 +1231,7 @@ with tab_science:
     Solar irradiance $G(t)$ follows the atmospheric optical air-mass transmission model (AM1.5 spectrum):
     $$G(t) = G_{peak} \cdot \left[\sin\left(\frac{\pi (t - 6)}{12}\right)\right]^{\alpha} \cdot (1 - \tau_{cloud})$$
     where $G_{peak}$ is the clear-sky noon flux ($\text{W/m}^2$), $\alpha \approx 1.0$ is the geometric optical exponent, and $\tau_{cloud} \in [0, 1]$ is the cloud attenuation fraction.
-    
+
     The electrical power delivered into the energy storage capacitor via the MPPT boost converter is:
     $$P_{in}(t) = G(t) \cdot A_{pv} \cdot \eta_{pv} \cdot \eta_{mppt}$$
     where $A_{pv}$ is the active solar panel area ($\text{m}^2$), $\eta_{pv}$ is photovoltaic cell conversion efficiency, and $\eta_{mppt} \approx 0.92$ is boost tracking efficiency.
@@ -1048,7 +1255,7 @@ with tab_science:
     $$R_0(t) = R_0(0) \cdot \left(1 + \alpha_{drift} \cdot t_{uncalibrated}\right) + \gamma_T \left(T_{amb} - 25^\circ\text{C}\right)$$
     Without recalibration, the estimated gas concentration drifts unbounded:
     $$CO_{2,uncalib}(t) = CO_{2,true}(t) \cdot (1 + \alpha_{drift} \cdot t_{uncalib}) + \gamma_T \Delta T$$
-    
+
     **Thermal Desorption Pulse (Calibration):**
     When the MCU closes the TPS22918 load switch, $120\text{ mW}$ of power is delivered to the micro-hotplate for duration $C_{calib} = 108\text{ s}$, heating the sensing film to $300^\circ\text{C}$. This thermally desorbs poisoning adsorbates according to Arrhenius reaction kinetics, resetting $R_0 \to R_0(0)$ and restoring accuracy to $<\pm 15\text{ ppm}$.
 
@@ -1071,11 +1278,11 @@ with tab_science:
 # TAB 5: FULL TELEMETRY DATA & CSV EXPORT
 # ==========================================================================
 with tab_data:
-    st.markdown("### 📋 Full Simulation Telemetry Trace")
+    st.markdown("###  Full Simulation Telemetry Trace")
     st.caption("Inspect the complete slot-by-slot dataset or export as CSV.")
     st.dataframe(df, use_container_width=True, height=350)
     st.download_button(
-        "📥 Download Trace as CSV",
+        "Download Trace as CSV",
         df.to_csv(index=False).encode("utf-8"),
         file_name="batteryless_sensor_node_trace.csv",
         mime="text/csv",

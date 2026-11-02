@@ -217,11 +217,13 @@ def build_presentation():
     s11 = prs.slides[10]
     set_text(s11.shapes[0], "LIST OF MODULES", font_name="Times New Roman", font_size=28, bold=True)
     modules_list = [
-        "1. Physical Solar Harvesting & Supercapacitor Energy Buffer Module.",
-        "2. TinyML Solar Forecasting & Closed-Loop Pre-Charge Assurance Module.",
-        "3. Dynamic LASF Task Scheduling & Multi-Sensor Air Quality Telemetry Module."
+        "1. Solar Energy Harvesting & Supercapacitor Energy Buffer Module.",
+        "2. Environmental Multi-Sensor Sensing & Atmospheric Compensation Module.",
+        "3. Predictive Energy Forecasting & On-Chip TinyML Irradiance Module.",
+        "4. Adaptive LASF Task Scheduling & Age-of-Information Arbitration Module.",
+        "5. AI-Driven Energy Management & Closed-Loop Self-Calibration Module."
     ]
-    set_text(s11.shapes[1], modules_list, font_name="Times New Roman", font_size=20, bold=False, space_after=14)
+    set_text(s11.shapes[1], modules_list, font_name="Times New Roman", font_size=18, bold=False, space_after=10)
 
     # =========================================================================
     # SLIDE 12: MODULE DESCRIPTION
@@ -229,14 +231,13 @@ def build_presentation():
     s12 = prs.slides[11]
     set_text(s12.shapes[0], "MODULE DESCRIPTION", font_name="Times New Roman", font_size=28, bold=True)
     mod_desc = [
-        "1. Physical Solar Harvesting & Supercapacitor Energy Buffer Module",
-        "This module simulates the physical energy harvesting dynamics of a 10 cm² PV cell using the single-diode solar model under variable solar flux (0–1200 W/m²). It models MPPT conversion efficiency (85%) and the charge/discharge behavior of a 2.0 F supercapacitor operating between 2.2 V and 5.0 V, accounting for usable energy (E = 0.5 * C * [V_max² - V_min²] = 20.16 J), internal series resistance (ESR), and ambient leakage.",
-        "2. TinyML Solar Forecasting & Closed-Loop Pre-Charge Assurance Module",
-        "This module implements on-chip intelligence on the Cortex-M MCU. It deploys a 14-input MLP neural network that ingests 5-hour immediate trend features and multi-day diurnal cycles to predict solar irradiance 30 minutes ahead. In tandem, it executes the Equation 1 pre-charge gate (E_stored ≥ E_need + E_margin), strictly preventing high-power sensor actuation unless stored energy deterministically covers the entire operation.",
-        "3. Dynamic LASF Task Scheduling & Multi-Sensor Air Quality Telemetry Module",
-        "This module arbitrates execution between continuous low-power environmental monitoring (temperature, humidity, ambient lux) and high-power MOX thermal recalibration. It evaluates task urgency using Least-Age-of-Information-Slack-First (LASF), opportunistically dispatching the 120 mW heater pulse during forecasted solar peaks while preserving freshness across all sensor telemetry channels."
+        "1. Solar Harvesting & Storage Module: Simulates a 10 cm² PV cell with single-diode physics and TI BQ25570 MPPT boost PMIC (92% eff.) buffering 20.16 J usable energy in a 2.0 F supercapacitor operating between 2.2V (cutoff) and 5.0V (max).",
+        "2. Environmental Sensing Module: Integrates Sensirion SHT40 (Temp/RH, <0.1 mW) for atmospheric cross-sensitivity correction, BH1750 ambient light lux sensing, and LoRa wireless telemetry bursts for continuous air monitoring.",
+        "3. Predictive Energy Forecasting Module: Deploys an on-chip 14-input TinyML MLP on STM32L4 MCU fusing 5-hour immediate trends with 4-day diurnal historical cycles to forecast solar flux 30 min ahead (MAE = 38.2 W/m²).",
+        "4. Adaptive LASF Scheduling Module: Arbitrates sensing vs calibration based on Least-Age-of-Information-Slack-First (Slack = ASD - Age), opportunistically shifting high-power actuation to forecasted solar peaks without starvation.",
+        "5. AI Energy Management & Self-Calibration Module: Enforces closed-loop Eq. 1 pre-charge assurance (E_stored ≥ 12.96 J) via 12-bit ADC Kelvin sensing, commanding the TPS22918 N-MOSFET switch to energize the 120 mW MOX heater to 300°C for 108 s during solar peaks. This resets chemical baseline drift (<±7.5 ppm error) with 0 brownouts guaranteed."
     ]
-    set_text(s12.shapes[1], mod_desc, font_name="Times New Roman", font_size=12.5, bold=False, space_after=3)
+    set_text(s12.shapes[1], mod_desc, font_name="Times New Roman", font_size=11, bold=False, space_after=3)
 
     # =========================================================================
     # SLIDE 13: OUTPUT 1
@@ -253,9 +254,9 @@ def build_presentation():
     # =========================================================================
     s14 = prs.slides[13]
     set_text(s14.shapes[0], "OUTPUT", font_name="Times New Roman", font_size=28, bold=True)
-    s14_sub = [""] * 8 + ["Real-Time Telemetry & Pre-Charge Voltage Verification (Eq. 1)"]
+    s14_sub = [""] * 8 + ["AI Energy Management, Hardware Architecture & Closed-Loop Self-Calibration"]
     set_text(s14.shapes[1], s14_sub, font_name="Times New Roman", font_size=18, bold=True, align=PP_ALIGN.CENTER)
-    replace_picture(s14, "Picture 4", "ppt/generated_images/slide_14_telemetry_output.png")
+    replace_picture(s14, "Picture 4", "ppt/generated_images/ai_energy_self_calibration_diagram.png")
 
     # =========================================================================
     # SLIDE 15: OUTPUT 3

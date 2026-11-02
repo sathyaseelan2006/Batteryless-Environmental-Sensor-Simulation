@@ -6,7 +6,7 @@
 <title>HelioSense - System Architecture Diagram</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
-  
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     background: #0b111e;
@@ -18,7 +18,7 @@
     padding: 30px 20px;
     min-height: 100vh;
   }
-  
+
   .header {
     text-align: center;
     margin-bottom: 25px;
@@ -35,7 +35,7 @@
     font-size: 13px;
     color: #94a3b8;
   }
-  
+
   .canvas-container {
     background: #0f172a;
     border: 1px solid #1e293b;
@@ -46,13 +46,13 @@
     width: 100%;
     overflow-x: auto;
   }
-  
+
   svg {
     width: 100%;
     height: auto;
     display: block;
   }
-  
+
   .legend {
     display: flex;
     justify-content: center;
@@ -94,7 +94,7 @@
         <stop offset="0%" stop-color="#1e293b"/>
         <stop offset="100%" stop-color="#0f172a"/>
       </linearGradient>
-      
+
       <linearGradient id="node-blue" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0%" stop-color="#0284c7"/>
         <stop offset="100%" stop-color="#0369a1"/>
@@ -104,7 +104,7 @@
         <stop offset="0%" stop-color="#0d9488"/>
         <stop offset="100%" stop-color="#0f766e"/>
       </linearGradient>
-      
+
       <linearGradient id="node-dark" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0%" stop-color="#1e293b"/>
         <stop offset="100%" stop-color="#0f172a"/>
@@ -114,7 +114,7 @@
       <marker id="arrow-power" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
       </marker>
-      
+
       <marker id="arrow-power-sw" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="#fb923c"/>
       </marker>
@@ -126,7 +126,7 @@
       <marker id="arrow-data" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="#c084fc"/>
       </marker>
-      
+
       <marker id="arrow-adc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
         <path d="M 0 1 L 10 5 L 0 9 z" fill="#facc15"/>
       </marker>
@@ -135,7 +135,7 @@
     <!-- 1. SUNLIGHT BLOCK -->
     <g transform="translate(30, 240)">
       <rect width="110" height="90" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
-      <text x="55" y="38" text-anchor="middle" font-size="22">☀️</text>
+
       <text x="55" y="60" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="700">Sunlight</text>
       <text x="55" y="76" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="'JetBrains Mono', monospace">0–1200 W/m²</text>
     </g>
@@ -146,7 +146,7 @@
     <!-- 2. SOLAR PV -->
     <g transform="translate(180, 240)">
       <rect width="115" height="90" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
-      <text x="57" y="38" text-anchor="middle" font-size="20">⚡</text>
+
       <text x="57" y="58" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="700">Solar PV</text>
       <text x="57" y="74" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="'JetBrains Mono', monospace">10 cm² Monocryl</text>
     </g>
@@ -157,7 +157,7 @@
     <!-- 3. ENERGY PMIC -->
     <g transform="translate(335, 235)">
       <rect width="130" height="100" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
-      <text x="65" y="35" text-anchor="middle" font-size="18">🔌</text>
+
       <text x="65" y="55" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">Energy PMIC</text>
       <text x="65" y="72" text-anchor="middle" fill="#38bdf8" font-size="10" font-weight="600">TI BQ25570</text>
       <text x="65" y="87" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="'JetBrains Mono', monospace">MPPT Boost (92%)</text>
@@ -169,7 +169,7 @@
     <!-- 4. SUPERCAPACITOR -->
     <g transform="translate(505, 230)">
       <rect width="130" height="110" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2.5"/>
-      <text x="65" y="36" text-anchor="middle" font-size="20">🔋</text>
+
       <text x="65" y="58" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="700">Supercapacitor</text>
       <text x="65" y="76" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="600">2.0 F / 5.0 V</text>
       <text x="65" y="93" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="'JetBrains Mono', monospace">20.16 J Usable Buffer</text>
@@ -184,7 +184,7 @@
     <!-- 5A. 1.8V LOW-IQ LDO -->
     <g transform="translate(700, 100)">
       <rect width="125" height="90" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
-      <text x="62" y="34" text-anchor="middle" font-size="18">⚙️</text>
+
       <text x="62" y="54" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">1.8V Low-Iq LDO</text>
       <text x="62" y="70" text-anchor="middle" fill="#38bdf8" font-size="10" font-weight="600">Always-On Rail</text>
       <text x="62" y="83" text-anchor="middle" fill="#94a3b8" font-size="8.5" font-family="'JetBrains Mono', monospace">P_cmos ∝ V² cut</text>
@@ -193,7 +193,7 @@
     <!-- 5B. 3.3V BUCK / LDO -->
     <g transform="translate(700, 380)">
       <rect width="125" height="90" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
-      <text x="62" y="34" text-anchor="middle" font-size="18">⚡</text>
+
       <text x="62" y="54" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">3.3V Buck / LDO</text>
       <text x="62" y="70" text-anchor="middle" fill="#38bdf8" font-size="10" font-weight="600">Actuator & RF Rail</text>
       <text x="62" y="83" text-anchor="middle" fill="#94a3b8" font-size="8.5" font-family="'JetBrains Mono', monospace">High Transient Supp</text>
@@ -202,14 +202,14 @@
     <!-- 6. ULTRA-LOW-POWER MCU (STM32L4) -->
     <g transform="translate(865, 70)">
       <rect width="180" height="150" rx="12" fill="#0369a1" fill-opacity="0.2" stroke="#0284c7" stroke-width="2.5"/>
-      <text x="90" y="32" text-anchor="middle" font-size="20">🧠</text>
+
       <text x="90" y="54" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="800">Ultra-Low-Power MCU</text>
       <text x="90" y="70" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="600">STM32L476RG (Cortex-M4)</text>
-      
+
       <!-- Sub-blocks inside MCU -->
       <rect x="15" y="82" width="150" height="26" rx="5" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
       <text x="90" y="99" text-anchor="middle" fill="#e0f2fe" font-size="9.5" font-weight="600">On-Chip TinyML Solar Forecaster</text>
-      
+
       <rect x="15" y="113" width="150" height="26" rx="5" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
       <text x="90" y="130" text-anchor="middle" fill="#e0f2fe" font-size="9.5" font-weight="600">Eq. 1 Pre-Charge & LASF Sched</text>
     </g>
@@ -225,7 +225,7 @@
     <!-- 7. POWER GATING SWITCH (TPS22918) -->
     <g transform="translate(865, 380)">
       <rect width="150" height="90" rx="10" fill="#0f172a" stroke="#fb923c" stroke-width="2"/>
-      <text x="75" y="34" text-anchor="middle" font-size="18">🔀</text>
+      <text x="75" y="34" text-anchor="middle" font-size="18"></text>
       <text x="75" y="54" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">TPS22918 Load SW</text>
       <text x="75" y="70" text-anchor="middle" fill="#fb923c" font-size="10" font-weight="600">N-MOSFET Power Gate</text>
       <text x="75" y="83" text-anchor="middle" fill="#94a3b8" font-size="8.5" font-family="'JetBrains Mono', monospace">Leakage &lt; 10 nA (OFF)</text>
@@ -242,7 +242,7 @@
     <!-- 8. MOX GAS SENSOR -->
     <g transform="translate(1100, 375)">
       <rect width="150" height="100" rx="10" fill="#0f172a" stroke="#fb923c" stroke-width="2"/>
-      <text x="75" y="34" text-anchor="middle" font-size="20">🔥</text>
+
       <text x="75" y="56" text-anchor="middle" fill="#f8fafc" font-size="12" font-weight="700">MOX Gas Sensor</text>
       <text x="75" y="73" text-anchor="middle" fill="#fb923c" font-size="10" font-weight="600">300°C Micro-Hotplate</text>
       <text x="75" y="88" text-anchor="middle" fill="#94a3b8" font-size="8.5" font-family="'JetBrains Mono', monospace">120 mW Switched Burst</text>
@@ -260,7 +260,7 @@
     <!-- SHT40 -->
     <g transform="translate(1110, 30)">
       <rect width="140" height="65" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8"/>
-      <text x="70" y="26" text-anchor="middle" font-size="15">🌡️</text>
+
       <text x="70" y="44" text-anchor="middle" fill="#f8fafc" font-size="11" font-weight="700">Temp / Humidity</text>
       <text x="70" y="58" text-anchor="middle" fill="#38bdf8" font-size="9.5">SHT40 (I²C · 0.1 mW)</text>
     </g>
@@ -269,7 +269,7 @@
     <!-- BH1750 Lux -->
     <g transform="translate(1110, 110)">
       <rect width="140" height="65" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8"/>
-      <text x="70" y="26" text-anchor="middle" font-size="15">☀️</text>
+
       <text x="70" y="44" text-anchor="middle" fill="#f8fafc" font-size="11" font-weight="700">Solar Light / Lux</text>
       <text x="70" y="58" text-anchor="middle" fill="#38bdf8" font-size="9.5">BH1750 (I²C Input)</text>
     </g>
@@ -278,7 +278,7 @@
     <!-- Wireless Radio (Ra-02 LoRa) -->
     <g transform="translate(1110, 190)">
       <rect width="140" height="75" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8"/>
-      <text x="70" y="28" text-anchor="middle" font-size="15">📡</text>
+
       <text x="70" y="46" text-anchor="middle" fill="#f8fafc" font-size="11" font-weight="700">Wireless Radio</text>
       <text x="70" y="60" text-anchor="middle" fill="#38bdf8" font-size="9.5">Ra-02 LoRa / BLE</text>
       <text x="70" y="70" text-anchor="middle" fill="#fb923c" font-size="8" font-family="'JetBrains Mono', monospace">3.3V Powered · 40mA</text>

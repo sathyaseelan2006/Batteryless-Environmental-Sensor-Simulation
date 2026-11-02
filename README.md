@@ -25,6 +25,8 @@ This project simulates a **predictive, energy-orchestrated architecture** that o
 
 ## 🏛️ System Architecture
 
+![System Architecture Diagram](system_architecture_diagram.png)
+
 ### Hardware & Power Distribution Block Diagram
 
 ```mermaid

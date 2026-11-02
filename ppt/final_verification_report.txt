@@ -1,0 +1,361 @@
+
+==================== SLIDE 1 ====================
+Slide Title: GEA1401 – ENVIRONMENTAL SCIENCES
+HELIOSENSE: BATTERYLESS ENVIRONMENTAL AIR QUALITY SENSOR NODE SIMULATION
+BATCH NO: 6
+  Shape 0 (Google Shape;175;p1, type=PLACEHOLDER (14)):
+    - GEA1401 – ENVIRONMENTAL SCIENCES
+    - HELIOSENSE: BATTERYLESS ENVIRONMENTAL AIR QUALITY SENSOR NODE SIMULATION
+    - BATCH NO: 6
+  Shape 1 (Google Shape;176;p1, type=PLACEHOLDER (14)):
+    - PRESENTED BY:
+    - 1. SATHYASEELAN K [927623BIT000]
+    - 2. PROJECT TEAM MEMBER 2 [927623BIT000]
+    - 3. PROJECT TEAM MEMBER 3 [927623BIT000]
+  Shape 2 (Google Shape;177;p1, type=PLACEHOLDER (14)):
+  Shape 3 (Google Shape;178;p1, type=PICTURE (13)):
+    [IMAGE]: size=(145, 90), bytes=3386, ext=png
+  Shape 4 (Google Shape;179;p1, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 5 (Google Shape;180;p1, type=PLACEHOLDER (14)):
+  Shape 6 (Google Shape;181;p1, type=PLACEHOLDER (14)):
+    - REVIEW PRESENTATION
+  Shape 7 (Google Shape;182;p1, type=PLACEHOLDER (14)):
+    - 1
+
+==================== SLIDE 2 ====================
+Slide Title: ABSTRACT
+  Shape 0 (Google Shape;187;p2, type=PLACEHOLDER (14)):
+    - ABSTRACT
+  Shape 1 (Google Shape;188;p2, type=PLACEHOLDER (14)):
+    - The HelioSense Batteryless Environmental Sensor Node Simulation is an end-to-end physical simulation
+  Shape 2 (Google Shape;189;p2, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 3 (Google Shape;190;p2, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 4 (Google Shape;191;p2, type=PLACEHOLDER (14)):
+  Shape 5 (Google Shape;192;p2, type=PLACEHOLDER (14)):
+    - REVIEW PRESENTATION
+  Shape 6 (Google Shape;193;p2, type=PLACEHOLDER (14)):
+    - 2
+
+==================== SLIDE 3 ====================
+Slide Title: OBJECTIVES
+  Shape 0 (Google Shape;198;p3, type=PLACEHOLDER (14)):
+    - OBJECTIVES
+  Shape 1 (Google Shape;199;p3, type=PLACEHOLDER (14)):
+    - • To develop an end-to-end discrete-time physical simulation of a perpetual, batteryless environment
+    - • To overcome the 240× peak-to-average power paradox between continuous ultra-low-power sensing (0.5
+    - • To eliminate brownout crashes under erratic solar flux by mathematically enforcing closed-loop pre
+    - • To design an on-chip TinyML neural network predictor forecasting 30-minute solar irradiance to opp
+    - • To implement a Least-Age-of-Information-Slack-First (LASF) scheduler that balances data freshness 
+  Shape 2 (Google Shape;200;p3, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 3 (Google Shape;201;p3, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 4 (Google Shape;202;p3, type=PLACEHOLDER (14)):
+  Shape 5 (Google Shape;203;p3, type=PLACEHOLDER (14)):
+    - REVIEW PRESENTATION
+  Shape 6 (Google Shape;204;p3, type=PLACEHOLDER (14)):
+    - 3
+
+==================== SLIDE 4 ====================
+Slide Title: INTRODUCTION
+  Shape 0 (Google Shape;209;p4, type=PLACEHOLDER (14)):
+    - INTRODUCTION
+  Shape 1 (Google Shape;210;p4, type=PLACEHOLDER (14)):
+    - Continuous environmental monitoring (air quality, greenhouse gases, VOCs, temperature, and humidity)
+    - However, conventional wireless sensor networks rely heavily on chemical lithium-ion batteries, which
+    - Batteryless sensor nodes powered exclusively by ambient solar micro-harvesting and supercapacitors p
+    - Metal-Oxide (MOX) gas sensors require periodic high-energy thermal pulses (120 mW for 108 s = 12.96 
+    - Triggering this thermal load without energy foresight plunges the supercapacitor below brownout volt
+  Shape 2 (Google Shape;211;p4, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 3 (Google Shape;212;p4, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 4 (Google Shape;213;p4, type=PLACEHOLDER (14)):
+  Shape 5 (Google Shape;214;p4, type=PLACEHOLDER (14)):
+    - REVIEW PRESENTATION
+  Shape 6 (Google Shape;215;p4, type=PLACEHOLDER (14)):
+    - 4
+
+==================== SLIDE 5 ====================
+Slide Title: LITERATURE  REVIEW 
+  Shape 0 (Google Shape;220;p5, type=PLACEHOLDER (14)):
+    - LITERATURE  REVIEW
+  Shape 1 (Google Shape;221;p5, type=PLACEHOLDER (14)):
+  Shape 2 (Google Shape;222;p5, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 3 (Google Shape;223;p5, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 4 (Google Shape;224;p5, type=PLACEHOLDER (14)):
+  Shape 5 (Google Shape;225;p5, type=PLACEHOLDER (14)):
+    - REVIEW PRESENTATION
+  Shape 6 (Google Shape;226;p5, type=PLACEHOLDER (14)):
+    - 5
+  Shape 7 (Picture 226, type=PICTURE (13)):
+    [IMAGE]: size=(2784, 1537), bytes=288915, ext=png
+
+==================== SLIDE 6 ====================
+Slide Title: EXISTING METHOD
+  Shape 0 (Google Shape;231;p6, type=PLACEHOLDER (14)):
+    - EXISTING METHOD
+  Shape 1 (Google Shape;232;p6, type=PLACEHOLDER (14)):
+    - Existing batteryless sensor nodes rely on fixed periodic hardware timers (e.g., executing calibratio
+    - Some systems use primitive static voltage threshold checks (triggering whenever V_cap > V_start), ig
+    - High-power sensor actuation during cloud cover or twilight discharges the supercapacitor below the 2
+    - Traditional systems use static FIFO or round-robin task dispatching, causing severe Age-of-Informati
+    - Lack of forward-looking weather forecasting results in premature energy depletion and frequent senso
+    - Under volatile weather (e.g., monsoon storms), existing designs crash 4 to 7 times daily, destroying
+  Shape 2 (Google Shape;233;p6, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 3 (Google Shape;234;p6, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 4 (Google Shape;235;p6, type=PLACEHOLDER (14)):
+  Shape 5 (Google Shape;236;p6, type=PLACEHOLDER (14)):
+    - REVIEW PRESENTATION
+  Shape 6 (Google Shape;237;p6, type=PLACEHOLDER (14)):
+    - 6
+
+==================== SLIDE 7 ====================
+Slide Title: PROPOSED METHOD
+  Shape 0 (Google Shape;242;p7, type=PLACEHOLDER (14)):
+    - PROPOSED METHOD
+  Shape 1 (Google Shape;243;p7, type=PLACEHOLDER (14)):
+    - Develop an adaptive, predictive energy-orchestrated architecture that guarantees continuous perpetua
+    - Implement Closed-Loop Pre-Charge Assurance (Equation 1): Strictly evaluate E_stored(t) ≥ E_need + E_
+    - Deploy an On-Chip TinyML Solar Predictor: Execute a 14-input Multi-Layer Perceptron (14 → 12 → 1) fo
+    - Opportunistic Peak Gating: Automatically defer energy-intensive MOX thermal recalibration (120 mW, 1
+    - Least-Age-of-Information-Slack-First (LASF) Scheduling: Prioritize ready tasks by dynamic slack (S_i
+    - Dual-Rail Power Distribution: Maintain continuous 1.8V rail for MCU and low-power sensors while dyna
+  Shape 2 (Google Shape;244;p7, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 3 (Google Shape;245;p7, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 4 (Google Shape;246;p7, type=PLACEHOLDER (14)):
+  Shape 5 (Google Shape;247;p7, type=PLACEHOLDER (14)):
+    - REVIEW PRESENTATION
+  Shape 6 (Google Shape;248;p7, type=PLACEHOLDER (14)):
+    - 7
+
+==================== SLIDE 8 ====================
+Slide Title: BLOCK DIAGRAM 
+  Shape 0 (Google Shape;253;p8, type=PLACEHOLDER (14)):
+    - BLOCK DIAGRAM
+  Shape 1 (Google Shape;254;p8, type=PLACEHOLDER (14)):
+  Shape 2 (Google Shape;255;p8, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 3 (Google Shape;256;p8, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 4 (Google Shape;257;p8, type=PLACEHOLDER (14)):
+  Shape 5 (Google Shape;258;p8, type=PLACEHOLDER (14)):
+    - REVIEW PRESENTATION
+  Shape 6 (Google Shape;259;p8, type=PLACEHOLDER (14)):
+    - 8
+  Shape 7 (Picture 259, type=PICTURE (13)):
+    [IMAGE]: size=(1774, 887), bytes=1822870, ext=png
+
+==================== SLIDE 9 ====================
+Slide Title: COMPONENTS DETAILS
+  Shape 0 (Google Shape;264;p9, type=PLACEHOLDER (14)):
+    - COMPONENTS DETAILS
+  Shape 1 (Google Shape;265;p9, type=PLACEHOLDER (14)):
+    - Solar Harvesting Subsystem – 10 cm² monocrystalline PV cell coupled to a BQ25570 MPPT boost PMIC wit
+    - Energy Buffer Subsystem – 2.0 F / 5.0 V low-ESR supercapacitor bank providing 20.16 J of usable ener
+    - Dual-Rail Power Regulators – Buck/LDO Reg 1 (always-on 1.8 V for core MCU & low-power sensors) and R
+    - Edge Compute Core – Ultra-low-power ARM Cortex-M (STM32L4) running TinyML solar inference and the di
+    - MOX Gas Sensor – SGP40 / MQ-135 air quality sensor with micro-hotplate (120 mW, 108 s pulse = 12.96 
+    - Ambient Climate Sensors – SHT40 high-precision temperature/RH sensor (<0.1 mW) for cross-sensitivity
+    - Power Gating Switch – Low-RDS(on) P-channel MOSFET switch controlled via MCU GPIO pin to completely 
+    - Wireless Uplink – LoRa SX1278 / BLE 5.0 transceiver for intermittent bursts (~30 mW TX) transmitting
+    - ADC Kelvin Sense Monitor – Internal 12-bit ADC Kelvin-sensing capacitor terminals with voltage divid
+    - Telemetry & Storage Engine – Session data logger recording capacitor SoC, solar irradiance, task dis
+  Shape 2 (Google Shape;266;p9, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 3 (Google Shape;267;p9, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 4 (Google Shape;268;p9, type=PLACEHOLDER (14)):
+  Shape 5 (Google Shape;269;p9, type=PLACEHOLDER (14)):
+    - REVIEW PRESENTATION
+  Shape 6 (Google Shape;270;p9, type=PLACEHOLDER (14)):
+    - 9
+
+==================== SLIDE 10 ====================
+Slide Title: SOFTWARE / TOOLS 
+  Shape 0 (Google Shape;275;p10, type=PLACEHOLDER (14)):
+    - SOFTWARE / TOOLS
+  Shape 1 (Google Shape;276;p10, type=PLACEHOLDER (14)):
+    - Python 3.10+ – Core programming language used to develop physical models, scheduling algorithms, and
+    - NumPy & SciPy – Utilized for high-performance vectorized mathematical operations, supercapacitor cha
+    - Scikit-Learn – Used to train and configure the lightweight Multi-Layer Perceptron (MLP) on-chip sola
+    - Streamlit – Framework utilized to build the interactive scientific simulation dashboard with live co
+    - Plotly & Matplotlib – Used to create publication-grade, interactive telemetry charts for voltage dec
+    - Three.js & WebGL (HTML5/CSS3) – Powers the interactive 3D hardware digital twin (batteryless_node_3d
+    - Unity 3D Engine (C#) – Integrated Unity simulation project (BatterylessNodeUnity) providing high-fid
+    - Visual Studio Code – Primary IDE for code authoring, linting, algorithmic profiling, and Git version
+  Shape 2 (Google Shape;277;p10, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 3 (Google Shape;278;p10, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 4 (Google Shape;279;p10, type=PLACEHOLDER (14)):
+  Shape 5 (Google Shape;280;p10, type=PLACEHOLDER (14)):
+    - REVIEW PRESENTATION
+  Shape 6 (Google Shape;281;p10, type=PLACEHOLDER (14)):
+    - 10
+
+==================== SLIDE 11 ====================
+Slide Title: LIST OF MODULES
+  Shape 0 (Title 1, type=PLACEHOLDER (14)):
+    - LIST OF MODULES
+  Shape 1 (Text Placeholder 2, type=PLACEHOLDER (14)):
+    - 1. Physical Solar Harvesting & Supercapacitor Energy Buffer Module.
+    - 2. TinyML Solar Forecasting & Closed-Loop Pre-Charge Assurance Module.
+    - 3. Dynamic LASF Task Scheduling & Multi-Sensor Air Quality Telemetry Module.
+  Shape 2 (Slide Number Placeholder 3, type=PLACEHOLDER (14)):
+    - 11
+  Shape 3 (Google Shape;277;p10, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 4 (Google Shape;278;p10, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+
+==================== SLIDE 12 ====================
+Slide Title: MODULE DESCRIPTION
+  Shape 0 (Title 1, type=PLACEHOLDER (14)):
+    - MODULE DESCRIPTION
+  Shape 1 (Text Placeholder 2, type=PLACEHOLDER (14)):
+    - 1. Physical Solar Harvesting & Supercapacitor Energy Buffer Module
+    - This module simulates the physical energy harvesting dynamics of a 10 cm² PV cell using the single-d
+    - 2. TinyML Solar Forecasting & Closed-Loop Pre-Charge Assurance Module
+    - This module implements on-chip intelligence on the Cortex-M MCU. It deploys a 14-input MLP neural ne
+    - 3. Dynamic LASF Task Scheduling & Multi-Sensor Air Quality Telemetry Module
+    - This module arbitrates execution between continuous low-power environmental monitoring (temperature,
+  Shape 2 (Slide Number Placeholder 3, type=PLACEHOLDER (14)):
+    - 12
+  Shape 3 (Google Shape;278;p10, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 4 (Google Shape;277;p10, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+
+==================== SLIDE 13 ====================
+Slide Title: OUTPUT
+  Shape 0 (Google Shape;286;p11, type=PLACEHOLDER (14)):
+    - OUTPUT
+  Shape 1 (Google Shape;287;p11, type=PLACEHOLDER (14)):
+    - 3D Hardware Digital Twin & Interactive Energy Harvesting Simulation
+  Shape 2 (Google Shape;288;p11, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 3 (Google Shape;289;p11, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 4 (Google Shape;290;p11, type=PLACEHOLDER (14)):
+  Shape 5 (Google Shape;291;p11, type=PLACEHOLDER (14)):
+    - REVIEW PRESENTATION
+  Shape 6 (Google Shape;292;p11, type=PLACEHOLDER (14)):
+    - 13
+  Shape 7 (Picture 292, type=PICTURE (13)):
+    [IMAGE]: size=(2984, 1350), bytes=241518, ext=png
+
+==================== SLIDE 14 ====================
+Slide Title: OUTPUT
+  Shape 0 (Title 1, type=PLACEHOLDER (14)):
+    - OUTPUT
+  Shape 1 (Text Placeholder 2, type=PLACEHOLDER (14)):
+    - Real-Time Telemetry & Pre-Charge Voltage Verification (Eq. 1)
+  Shape 2 (Slide Number Placeholder 3, type=PLACEHOLDER (14)):
+    - 14
+  Shape 3 (Google Shape;288;p11, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 4 (Google Shape;289;p11, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 5 (Picture 289, type=PICTURE (13)):
+    [IMAGE]: size=(2484, 1378), bytes=343486, ext=png
+
+==================== SLIDE 15 ====================
+Slide Title: OUTPUT
+  Shape 0 (Title 1, type=PLACEHOLDER (14)):
+    - OUTPUT
+  Shape 1 (Text Placeholder 2, type=PLACEHOLDER (14)):
+    - System Performance Benchmarks & Environmental Stress Analytics
+  Shape 2 (Slide Number Placeholder 3, type=PLACEHOLDER (14)):
+    - 15
+  Shape 3 (Google Shape;288;p11, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 4 (Google Shape;289;p11, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 5 (Picture 289, type=PICTURE (13)):
+    [IMAGE]: size=(2555, 1374), bytes=422212, ext=png
+
+==================== SLIDE 16 ====================
+Slide Title: CONCLUSION
+  Shape 0 (Title 1, type=PLACEHOLDER (14)):
+    - CONCLUSION
+  Shape 1 (Text Placeholder 2, type=PLACEHOLDER (14)):
+    - The HelioSense Batteryless Environmental Sensor Node Simulation successfully resolves the critical 2
+  Shape 2 (Slide Number Placeholder 3, type=PLACEHOLDER (14)):
+    - 16
+  Shape 3 (Google Shape;277;p10, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 4 (Google Shape;289;p11, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+
+==================== SLIDE 17 ====================
+Slide Title: Future Enhancement
+  Shape 0 (Title 1, type=PLACEHOLDER (14)):
+    - Future Enhancement
+  Shape 1 (Text Placeholder 2, type=PLACEHOLDER (14)):
+    - The proposed HelioSense Batteryless Environmental Sensor Node Simulation can be further advanced thr
+  Shape 2 (Slide Number Placeholder 3, type=PLACEHOLDER (14)):
+    - 17
+  Shape 3 (Google Shape;289;p11, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 4 (Google Shape;277;p10, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+
+==================== SLIDE 18 ====================
+Slide Title: MAPPING WITH SDG
+  Shape 0 (Title 1, type=PLACEHOLDER (14)):
+    - MAPPING WITH SDG
+  Shape 1 (Text Placeholder 2, type=PLACEHOLDER (14)):
+    - 1. SDG 7 – Affordable and Clean Energy (Perpetual ambient solar micro-harvesting eliminating relianc
+    - 2. SDG 11 – Sustainable Cities and Communities (Autonomous, zero-maintenance urban air quality and V
+    - 3. SDG 12 – Responsible Consumption and Production (Eliminating chemical lithium-ion battery waste a
+    - 4. SDG 13 – Climate Action (High-precision, continuous greenhouse gas, CO2, and pollution tracking t
+  Shape 2 (Slide Number Placeholder 3, type=PLACEHOLDER (14)):
+    - 18
+  Shape 3 (Google Shape;277;p10, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+  Shape 4 (Google Shape;289;p11, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+
+==================== SLIDE 19 ====================
+Slide Title: REFERENCES
+  Shape 0 (Title 1, type=PLACEHOLDER (14)):
+    - REFERENCES
+  Shape 1 (Text Placeholder 2, type=PLACEHOLDER (14)):
+    - [1] S. Sudevalayam and P. Kulkarni, “Energy Harvesting Sensor Nodes: Survey and Firmware Development
+    - [2] N. Barsan, D. Koziej, and U. Weimar, “Metal oxide-based gas sensor research: How to?,” Sensors a
+    - [3] R. D. Yates, Y. Sun, D. R. Brown, S. K. Kaul, E. Modiano, and S. Ulukus, “Age of Information: An
+    - [4] A. Colin, A. Bakar, B. Lucia, et al., “An Energy-interference-free Hardware-Software Primitive f
+    - [5] H. Sharma, J. Magno, and L. Benini, “Self-Sustaining IoT Edge Nodes with On-Chip Solar Predictio
+  Shape 2 (Slide Number Placeholder 3, type=PLACEHOLDER (14)):
+    - 19
+  Shape 3 (Google Shape;289;p11, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 4 (Google Shape;277;p10, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png
+
+==================== SLIDE 20 ====================
+Slide Title: REFERENCES
+  Shape 0 (Title 1, type=PLACEHOLDER (14)):
+    - REFERENCES
+  Shape 1 (Text Placeholder 2, type=PLACEHOLDER (14)):
+    - [6] S. Bader and B. Oelmann, “Enabling Batteryless Wireless Sensor Nodes through Environmental Energ
+    - [7] M. Gorlatova, J. Sarik, G. Grebla, et al., “Movers and Shakers: Kinetic Energy Harvesting for th
+    - [8] J. Hester and J. Sorber, “Flicker: Rapid Prototyping for the Batteryless Internet of Things,” in
+    - [9] K. Sathyaseelan, “Adaptive Predictive Energy-Orchestrated Batteryless Environmental Sensor Node 
+    - [10] Texas Instruments, “Ultra-Low-Power Boost Charger with Battery Management for Energy Harvesting
+  Shape 2 (Slide Number Placeholder 3, type=PLACEHOLDER (14)):
+    - 20
+  Shape 3 (Google Shape;289;p11, type=PICTURE (13)):
+    [IMAGE]: size=(241, 165), bytes=3095, ext=jpg
+  Shape 4 (Google Shape;277;p10, type=PICTURE (13)):
+    [IMAGE]: size=(351, 170), bytes=21401, ext=png

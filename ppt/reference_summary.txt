@@ -1,0 +1,204 @@
+=== SLIDE 1 ===
+  [Google Shape;175;p1]:
+    - GEA1401 – ENVIRONMENTAL SCIENCES SIMULATION-BASED ECO-DRIVING TRAINING SYSTEM FOR ELECTRIC VEHICLES BATCH NO:6
+  [Google Shape;176;p1]:
+    - PRESENTED BY:
+    - 1.NAVETHA SRI R M [927623BIT079]
+    - 2.ROSHAN BEGUM J [927623BIT096]
+    - 3.VARSHINI S	   [927623BIT123]
+  [Google Shape;181;p1]:
+    - REVIEW PRESENTATION
+  [Google Shape;182;p1]:
+    - 1
+=== SLIDE 2 ===
+  [Google Shape;187;p2]:
+    - ABSTRACT
+  [Google Shape;188;p2]:
+    - The Simulation-Based Eco-Driving Training System for Electric Vehicles is a software-based simulation developed to promote energy-efficient and environmentally responsible driving practices. The system allows users to control an electric vehicle using keyboard inputs and practice different driving conditions through a simple interactive simulation. It monitors parameters such as speed, battery level, energy consumption, acceleration, and braking behavior during driving. Based on the user's driving performance, the system calculates an eco-driving score and provides real-time feedback. The simulation demonstrates how smooth acceleration, controlled speed, and efficient braking can reduce energy consumption and improve battery performance. It provides a safe and risk-free platform for users to understand and practice eco-friendly driving techniques without using a real electric vehicle. By encouraging efficient driving habits, the system aims to reduce energy consumption, improve EV driving range, and support environmental sustainability.
+  [Google Shape;192;p2]:
+    - REVIEW PRESENTATION
+  [Google Shape;193;p2]:
+    - 2
+=== SLIDE 3 ===
+  [Google Shape;198;p3]:
+    - OBJECTIVES
+  [Google Shape;199;p3]:
+    - The main objective of this project is to develop a code-based eco-driving simulation system for electric vehicles that promotes sustainable driving practices. The system monitors speed, battery level, energy consumption, acceleration, and braking behavior to evaluate driving efficiency. It provides an eco-driving score and real-time feedback to help users improve their driving habits. The system demonstrates how smooth acceleration, controlled speed, and efficient braking can reduce energy consumption and improve EV driving range. It provides a safe and interactive platform for users to learn and practice energy-efficient driving without using a real vehicle. Overall, the project aims to encourage responsible driving behavior and contribute to environmental sustainability.
+  [Google Shape;203;p3]:
+    - REVIEW PRESENTATION
+  [Google Shape;204;p3]:
+    - 3
+=== SLIDE 4 ===
+  [Google Shape;209;p4]:
+    - INTRODUCTION
+  [Google Shape;210;p4]:
+    - Electric vehicles (EVs) are an important solution for reducing fuel consumption, air pollution, and carbon emissions. However, driving behavior such as sudden acceleration, excessive speed, and harsh braking can increase energy consumption and reduce battery range. The Simulation-Based Eco-Driving Training System for Electric Vehicles is developed as a software-based platform to help users understand and practice energy-efficient driving techniques. The system monitors driving parameters and provides feedback to encourage safer, smoother, and more sustainable driving habits.
+  [Google Shape;214;p4]:
+    - REVIEW PRESENTATION
+  [Google Shape;215;p4]:
+    - 4
+=== SLIDE 5 ===
+  [Google Shape;220;p5]:
+    - LITERATURE  REVIEW
+  [Google Shape;225;p5]:
+    - REVIEW PRESENTATION
+  [Google Shape;226;p5]:
+    - 5
+=== SLIDE 6 ===
+  [Google Shape;231;p6]:
+    - EXISTING METHOD
+  [Google Shape;232;p6]:
+    - Existing eco-driving systems mainly focus on monitoring vehicle speed, acceleration, braking, and energy consumption to evaluate driving efficiency.
+    - Some systems use real-time driver feedback to encourage smooth acceleration, controlled speed, and efficient braking.
+    - Advanced systems use optimization algorithms or machine learning techniques to identify energy-efficient driving patterns.
+    - These methods can estimate battery consumption and driving range based on different driving behaviours.
+    - Some systems are tested using real vehicles or complex simulation environments under different road and traffic conditions.
+    - Existing methods help reduce unnecessary energy consumption and promote environmentally sustainable driving practices.
+  [Google Shape;236;p6]:
+    - REVIEW PRESENTATION
+  [Google Shape;237;p6]:
+    - 6
+=== SLIDE 7 ===
+  [Google Shape;242;p7]:
+    - PROPOSED METHOD
+  [Google Shape;243;p7]:
+    - Develop a code-based eco-driving simulation for electric vehicles to help users practice energy-efficient driving techniques.
+    - Monitor vehicle speed, acceleration, braking, battery level, and energy consumption during the simulation.
+    - Calculate an eco-driving score based on the user's driving behaviour and energy efficiency.
+    - Provide real-time feedback to encourage smooth acceleration, controlled speed, and efficient braking.
+    - Display the effects of driving behaviour on battery usage, energy consumption, and EV driving range, promoting sustainable driving habits.
+  [Google Shape;247;p7]:
+    - REVIEW PRESENTATION
+  [Google Shape;248;p7]:
+    - 7
+=== SLIDE 8 ===
+  [Google Shape;253;p8]:
+    - BLOCK DIAGRAM
+  [Google Shape;258;p8]:
+    - REVIEW PRESENTATION
+  [Google Shape;259;p8]:
+    - 8
+=== SLIDE 9 ===
+  [Google Shape;264;p9]:
+    - COMPONENTS DETAILS
+  [Google Shape;265;p9]:
+    - User Input Module – Accepts keyboard controls such as acceleration, braking, reversing, and steering to control the EV.
+    - Vehicle Simulation Module – Simulates the movement and basic driving behavior of the electric vehicle using code.
+    - Environment Module – Provides different road conditions such as city roads, highways, hills, and mountain roads along with weather conditions.
+    - Vehicle Control Module – Manages vehicle speed, acceleration, braking, steering, and movement based on user input.
+    - Monitoring Module – Monitors speed, battery level, distance travelled, energy consumption, acceleration, and braking behavior.
+    - Energy Management Module – Calculates battery consumption according to vehicle speed, acceleration, braking, distance, and driving conditions.
+    - Eco-Driving Score Module – Calculates the user's eco-driving score based on efficient speed control, smooth acceleration, braking, and energy usage.
+    - Feedback Module – Displays the eco-driving score and provides suggestions to improve driving efficiency.
+    - Data Storage Module – Stores driving session details, battery usage, energy consumption, scores, and performance statistics.
+    - Output Module – Displays the final eco-driving score, battery usage, energy efficiency, driving performance, and estimated driving range.
+  [Google Shape;269;p9]:
+    - REVIEW PRESENTATION
+  [Google Shape;270;p9]:
+    - 9
+=== SLIDE 10 ===
+  [Google Shape;275;p10]:
+    - SOFTWARE / TOOLS
+  [Google Shape;276;p10]:
+    - Visual Studio Code (VS Code) – Main development environment used to write, edit, and manage the project code.
+    - HTML – Used to create the structure of the simulation interface and user controls.
+    - CSS – Used to design the interface, vehicle display, dashboard, and visual elements.
+    - JavaScript – Used to implement vehicle movement, keyboard controls, battery calculation, energy consumption, and eco-driving logic.
+    - Web Browser – Used to run and test the code-based simulation and display the user interface.
+    - JavaScript Animation / Canvas – Used to create the vehicle movement and simulation environment without using Unity or 3D models.
+    - Local Storage / JSON – Used to store driving sessions, scores, battery usage, and performance data.
+    - VS Code Extensions – Used for code editing, debugging, and running the web-based simulation efficiently.
+  [Google Shape;280;p10]:
+    - REVIEW PRESENTATION
+  [Google Shape;281;p10]:
+    - 10
+=== SLIDE 11 ===
+  [Title 1]:
+    - LIST OF MODULES
+  [Text Placeholder 2]:
+    - 1. Vehicle Simulation and City Environment Module.
+    - 2. Dynamic Weather and Driving Monitoring Module.
+    - 3. Performance Evaluation and Feedback Module.
+  [Slide Number Placeholder 3]:
+    - 11
+=== SLIDE 12 ===
+  [Title 1]:
+    - MODULE DESCRIPTION
+  [Text Placeholder 2]:
+    - 1. Vehicle Simulation and City Environment Module
+    - This module provides an interactive city-road environment for practising EV driving. It allows users to select an electric car or bike and perform basic operations such as acceleration, braking, steering, and reversing. The environment includes roads, traffic signals, pedestrians, zebra crossings, buildings, and other vehicles to create a realistic urban driving experience.
+    - 2. Dynamic Weather and Driving Monitoring Module
+    - This module simulates changing weather conditions, automatically transitioning from sunny to rainy weather during driving. It monitors important vehicle parameters such as speed, battery percentage, distance travelled, and eco score through a Heads-Up Display (HUD). It also helps users understand how weather conditions and driving behaviour affect road safety and battery consumption.
+    - 3. Performance Evaluation and Feedback Module
+    - This module evaluates the user's driving performance based on speed control, acceleration, braking, traffic-rule compliance, and battery usage. It calculates the safety and eco-driving scores and generates performance feedback. The feedback helps users identify driving mistakes, improve energy efficiency, and develop safe and responsible driving habits.
+  [Slide Number Placeholder 3]:
+    - 12
+=== SLIDE 13 ===
+  [Google Shape;286;p11]:
+    - OUTPUT
+  [Google Shape;287;p11]:
+    - 3D Driving Environment and Vehicle Simulation
+  [Google Shape;291;p11]:
+    - REVIEW PRESENTATION
+  [Google Shape;292;p11]:
+    - 13
+=== SLIDE 14 ===
+  [Title 1]:
+    - OUTPUT
+  [Text Placeholder 2]:
+    - Battery Monitoring and Eco-Driving Analysis
+  [Slide Number Placeholder 3]:
+    - 14
+=== SLIDE 15 ===
+  [Title 1]:
+    - OUTPUT
+  [Text Placeholder 2]:
+    - Performance Report
+  [Slide Number Placeholder 3]:
+    - 15
+=== SLIDE 16 ===
+  [Title 1]:
+    - CONCLUSION
+  [Text Placeholder 2]:
+    - The Simulation-Based Eco-Driving Training System for Electric Vehicles was developed to help users learn safe and energy-efficient driving practices through a software-based simulation. The system provides an interactive city-road environment with essential driving controls such as acceleration, braking, steering, and reversing, along with traffic signals, pedestrians, road crossings, buildings, and other vehicles to create a realistic urban driving experience. It integrates a dynamic weather module that automatically changes environmental conditions between sunny and rainy weather during the simulation. A Heads-Up Display (HUD) provides essential driving information, including vehicle speed, battery percentage, eco score, and distance travelled. The system also monitors driving performance based on speed limits, safe driving practices, and battery consumption, helping users understand the importance of energy-efficient driving. Overall, the proposed system provides a practical and interactive platform for learning eco-driving techniques without requiring a physical electric vehicle or specialized simulation hardware. It helps users understand the relationship between driving behaviour, battery usage, road safety, and energy conservation while encouraging responsible driving habits and improving awareness of electric vehicle efficiency.
+  [Slide Number Placeholder 3]:
+    - 16
+=== SLIDE 17 ===
+  [Title 1]:
+    - Future Enhancement
+  [Text Placeholder 2]:
+    - The proposed Simulation-Based Eco-Driving Training System for Electric Vehicles can be further enhanced by integrating Artificial Intelligence (AI) to analyse driving behaviour and provide personalized recommendations. Realistic 3D environments and improved traffic simulations can be introduced to enhance the user experience. A user login system and cloud-based database can be developed to store driving history, eco scores, and training progress. Multiplayer functionality and different difficulty levels can be implemented to support interactive learning. Furthermore, detailed performance reports can help improve safety awareness and learning outcomes. These enhancements can make the system more realistic, intelligent, and effective in promoting energy-efficient driving and sustainable electric transportation.
+  [Slide Number Placeholder 3]:
+    - 17
+=== SLIDE 18 ===
+  [Title 1]:
+    - MAPPING WITH SDG
+  [Text Placeholder 2]:
+    - 1. SDG 7 – Affordable and Clean Energy
+    - 2. SDG 11 – Sustainable Cities and Communities
+    - 3. SDG 12 – Responsible Consumption and Production
+    - 4. SDG 13 – Climate Action
+  [Slide Number Placeholder 3]:
+    - 18
+=== SLIDE 19 ===
+  [Title 1]:
+    - REFERENCES
+  [Text Placeholder 2]:
+    - [1] A. Galvin, ―Energy consumption effects of speed and acceleration in electric vehicles: Laboratory case studies and implications for drivers and policymakers,‖ Transportation Research Part D: Transport and Environment, vol. 52, pp. 234–248, Jun. 2017, doi: 10.1016/j.trd.2017.04.020.
+    - [2] ―The influence of driving patterns on energy consumption in electric car driving and the role of regenerative braking,‖ Transportation Research Procedia, vol. 22, pp. 174–182, 2017, doi: 10.1016/j.trpro.2017.03.024.
+    - [3] Y. Huang, E. C. Y. Ng, J. L. Zhou, N. C. Surawski, E. F. C. Chan, and G. Hong, ―Eco-driving technology for sustainable road transport: A review,‖ Renewable and Sustainable Energy Reviews, vol. 93, pp. 596–609, Oct. 2018, doi: 10.1016/j.rser.2018.05.030.
+    - [4] R. Tu, J. Xu, T. Li, and H. Chen, ―Effective and acceptable eco-driving guidance for human-driving vehicles: A review,‖ International Journal of Environmental Research and Public Health, vol. 19, no. 12, Art. no. 7310, Jun. 2022, doi: 10.3390/ijerph19127310.
+    - [5] E. A. Grunditz and T. Thiringer, ―Characterizing BEV powertrain energy consumption, efficiency, and range during official and drive cycles from Gothenburg, Sweden,‖ IEEE Transactions on Vehicular Technology, vol. 65, no. 6, pp. 3964–3980, Jun. 2016, doi: 10.1109/TVT.2015.2492239.
+  [Slide Number Placeholder 3]:
+    - 19
+=== SLIDE 20 ===
+  [Title 1]:
+    - REFERENCES
+  [Text Placeholder 2]:
+    - [6] W. Vaz, A. K. Nandi, and U. O. Koylu, ―A multiobjective approach to find optimal electric-vehicle acceleration: Simultaneous minimization of acceleration duration and energy consumption,‖ IEEE Transactions on Vehicular Technology, vol. 65, no. 6, pp. 4633–4644, Jun. 2016, doi: 10.1109/TVT.2015.2497246.
+    - [7] I. Neumann, T. Franke, P. Cocron, F. Bühler, and J. F. Krems, ―Eco-driving strategies in battery electric vehicle use—How do drivers adapt over time?‖ IET Intelligent Transport Systems, vol. 9, pp. 746–753, 2015, doi: 10.1049/iet-its.2014.0221.
+    - [8] J. Li, A. Fotouhi, Y. Liu, Y. Zhang, and Z. Chen, ―Review on eco-driving control for connected and automated vehicles,‖ Renewable and Sustainable Energy Reviews, vol. 189, Art. no. 114025, 2024, doi:10.1016/j.rser.2023.114025.
+    - [9] I. Park, C. Kim, H. Lee, et al., ―Comprehensive analysis of battery thermal management and energy consumption in an electric vehicle: Impact of driving modes and ambient temperatures,‖ International Journal of Automotive Technology, vol. 26, pp. 621–636, 2025, doi: 10.1007/s12239-024-00202-8.
+    - [10] T. Jayson, A. S. M. Bakibillah, C. P. Tan, M. A. S. Kamal, V. Monn, and J. I. Imura, ―Electric vehicle eco-driving strategy at signalized intersections based on optimal energy consumption,‖ Journal of Environmental Management, vol. 368, Art. no. 122245, 2024, doi: 10.1016/j.jenvman.2024.122245.
+  [Slide Number Placeholder 3]:
+    - 20

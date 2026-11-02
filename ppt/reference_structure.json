@@ -1,0 +1,1787 @@
+[
+  {
+    "slide_num": 1,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Google Shape;175;p1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 1676401,
+        "top": 1062196,
+        "width": 8772524,
+        "height": 1405702,
+        "text": "\u000bGEA1401 – ENVIRONMENTAL SCIENCES\u000b SIMULATION-BASED ECO-DRIVING TRAINING SYSTEM FOR ELECTRIC VEHICLES \u000bBATCH NO:6",
+        "paragraphs": [
+          "\u000bGEA1401 – ENVIRONMENTAL SCIENCES\u000b SIMULATION-BASED ECO-DRIVING TRAINING SYSTEM FOR ELECTRIC VEHICLES \u000bBATCH NO:6"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Google Shape;176;p1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 1119648,
+        "top": 3325149,
+        "width": 5720443,
+        "height": 2565042,
+        "text": "PRESENTED BY:\n1.NAVETHA SRI R M [927623BIT079]\n2.ROSHAN BEGUM J [927623BIT096]\n3.VARSHINI S\t   [927623BIT123]",
+        "paragraphs": [
+          "PRESENTED BY:",
+          "1.NAVETHA SRI R M [927623BIT079]",
+          "2.ROSHAN BEGUM J [927623BIT096]",
+          "3.VARSHINI S\t   [927623BIT123]"
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Google Shape;177;p1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 7648734,
+        "top": 3955027,
+        "width": 4205282,
+        "height": 2011363,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;178;p1",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 9982601,
+        "top": 344128,
+        "width": 1156886,
+        "height": 718067
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;179;p1",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 5,
+        "name": "Google Shape;180;p1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 7678737,
+        "top": 5883275,
+        "width": 2743200,
+        "height": 365125,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Google Shape;181;p1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913774,
+        "top": 5883275,
+        "width": 6672887,
+        "height": 365125,
+        "text": "REVIEW PRESENTATION ",
+        "paragraphs": [
+          "REVIEW PRESENTATION "
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Google Shape;182;p1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "1",
+        "paragraphs": [
+          "1"
+        ]
+      }
+    ]
+  },
+  {
+    "slide_num": 2,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Google Shape;187;p2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 737419,
+        "top": 894735,
+        "width": 10815483,
+        "height": 795953,
+        "text": "ABSTRACT",
+        "paragraphs": [
+          "ABSTRACT"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Google Shape;188;p2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 838199,
+        "top": 2143431,
+        "width": 10714703,
+        "height": 4349443,
+        "text": " The Simulation-Based Eco-Driving Training System for Electric Vehicles is a software-based simulation developed to promote energy-efficient and environmentally responsible driving practices. The system allows users to control an electric vehicle using keyboard inputs and practice different driving conditions through a simple interactive simulation. It monitors parameters such as speed, battery level, energy consumption, acceleration, and braking behavior during driving. Based on the user's driving performance, the system calculates an eco-driving score and provides real-time feedback. The simulation demonstrates how smooth acceleration, controlled speed, and efficient braking can reduce energy consumption and improve battery performance. It provides a safe and risk-free platform for users to understand and practice eco-friendly driving techniques without using a real electric vehicle. By encouraging efficient driving habits, the system aims to reduce energy consumption, improve EV driving range, and support environmental sustainability.",
+        "paragraphs": [
+          " The Simulation-Based Eco-Driving Training System for Electric Vehicles is a software-based simulation developed to promote energy-efficient and environmentally responsible driving practices. The system allows users to control an electric vehicle using keyboard inputs and practice different driving conditions through a simple interactive simulation. It monitors parameters such as speed, battery level, energy consumption, acceleration, and braking behavior during driving. Based on the user's driving performance, the system calculates an eco-driving score and provides real-time feedback. The simulation demonstrates how smooth acceleration, controlled speed, and efficient braking can reduce energy consumption and improve battery performance. It provides a safe and risk-free platform for users to understand and practice eco-friendly driving techniques without using a real electric vehicle. By encouraging efficient driving habits, the system aims to reduce energy consumption, improve EV driving range, and support environmental sustainability."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Google Shape;189;p2",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;190;p2",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10093932,
+        "top": 102758,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;191;p2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 7680642,
+        "top": 6248400,
+        "width": 2743200,
+        "height": 365125,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Google Shape;192;p2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913774,
+        "top": 6248400,
+        "width": 6672887,
+        "height": 365125,
+        "text": "REVIEW PRESENTATION ",
+        "paragraphs": [
+          "REVIEW PRESENTATION "
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Google Shape;193;p2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10517821,
+        "top": 6236970,
+        "width": 764215,
+        "height": 365125,
+        "text": "2",
+        "paragraphs": [
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "slide_num": 3,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Google Shape;198;p3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 1986903,
+        "top": 750172,
+        "width": 7710162,
+        "height": 1090454,
+        "text": "OBJECTIVES",
+        "paragraphs": [
+          "OBJECTIVES"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Google Shape;199;p3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 953729,
+        "top": 1966452,
+        "width": 9267415,
+        "height": 3972288,
+        "text": " The main objective of this project is to develop a code-based eco-driving simulation system for electric vehicles that promotes sustainable driving practices. The system monitors speed, battery level, energy consumption, acceleration, and braking behavior to evaluate driving efficiency. It provides an eco-driving score and real-time feedback to help users improve their driving habits. The system demonstrates how smooth acceleration, controlled speed, and efficient braking can reduce energy consumption and improve EV driving range. It provides a safe and interactive platform for users to learn and practice energy-efficient driving without using a real vehicle. Overall, the project aims to encourage responsible driving behavior and contribute to environmental sustainability.",
+        "paragraphs": [
+          " The main objective of this project is to develop a code-based eco-driving simulation system for electric vehicles that promotes sustainable driving practices. The system monitors speed, battery level, energy consumption, acceleration, and braking behavior to evaluate driving efficiency. It provides an eco-driving score and real-time feedback to help users improve their driving habits. The system demonstrates how smooth acceleration, controlled speed, and efficient braking can reduce energy consumption and improve EV driving range. It provides a safe and interactive platform for users to learn and practice energy-efficient driving without using a real vehicle. Overall, the project aims to encourage responsible driving behavior and contribute to environmental sustainability."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Google Shape;200;p3",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10093932,
+        "top": 102758,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;201;p3",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;202;p3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 7678737,
+        "top": 5883275,
+        "width": 2743200,
+        "height": 365125,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Google Shape;203;p3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913774,
+        "top": 5883275,
+        "width": 6672887,
+        "height": 365125,
+        "text": "REVIEW PRESENTATION ",
+        "paragraphs": [
+          "REVIEW PRESENTATION "
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Google Shape;204;p3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "3",
+        "paragraphs": [
+          "3"
+        ]
+      }
+    ]
+  },
+  {
+    "slide_num": 4,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Google Shape;209;p4",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 1909917,
+        "top": 770054,
+        "width": 8311228,
+        "height": 973393,
+        "text": "INTRODUCTION",
+        "paragraphs": [
+          "INTRODUCTION"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Google Shape;210;p4",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 707923,
+        "top": 1966452,
+        "width": 10717161,
+        "height": 3972288,
+        "text": " Electric vehicles (EVs) are an important solution for reducing fuel consumption, air pollution, and carbon emissions. However, driving behavior such as sudden acceleration, excessive speed, and harsh braking can increase energy consumption and reduce battery range. The Simulation-Based Eco-Driving Training System for Electric Vehicles is developed as a software-based platform to help users understand and practice energy-efficient driving techniques. The system monitors driving parameters and provides feedback to encourage safer, smoother, and more sustainable driving habits.",
+        "paragraphs": [
+          " Electric vehicles (EVs) are an important solution for reducing fuel consumption, air pollution, and carbon emissions. However, driving behavior such as sudden acceleration, excessive speed, and harsh braking can increase energy consumption and reduce battery range. The Simulation-Based Eco-Driving Training System for Electric Vehicles is developed as a software-based platform to help users understand and practice energy-efficient driving techniques. The system monitors driving parameters and provides feedback to encourage safer, smoother, and more sustainable driving habits."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Google Shape;211;p4",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;212;p4",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;213;p4",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 7678737,
+        "top": 5883275,
+        "width": 2743200,
+        "height": 365125,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Google Shape;214;p4",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913774,
+        "top": 5883275,
+        "width": 6672887,
+        "height": 365125,
+        "text": "REVIEW PRESENTATION ",
+        "paragraphs": [
+          "REVIEW PRESENTATION "
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Google Shape;215;p4",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "4",
+        "paragraphs": [
+          "4"
+        ]
+      }
+    ]
+  },
+  {
+    "slide_num": 5,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Google Shape;220;p5",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 589542,
+        "top": 872843,
+        "width": 10764258,
+        "height": 845114,
+        "text": "LITERATURE  REVIEW ",
+        "paragraphs": [
+          "LITERATURE  REVIEW "
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Google Shape;221;p5",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 476532,
+        "top": 1897166,
+        "width": 10877268,
+        "height": 4279797,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Google Shape;222;p5",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;223;p5",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;224;p5",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 7753032,
+        "top": 6248400,
+        "width": 2743200,
+        "height": 365125,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Google Shape;225;p5",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913774,
+        "top": 6237605,
+        "width": 6672887,
+        "height": 365125,
+        "text": "REVIEW PRESENTATION ",
+        "paragraphs": [
+          "REVIEW PRESENTATION "
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Google Shape;226;p5",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 6248400,
+        "width": 764215,
+        "height": 365125,
+        "text": "5",
+        "paragraphs": [
+          "5"
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Picture 1",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 1066800,
+        "top": 1846580,
+        "width": 9696450,
+        "height": 4330700
+      }
+    ]
+  },
+  {
+    "slide_num": 6,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Google Shape;231;p6",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 737419,
+        "top": 894735,
+        "width": 10815483,
+        "height": 795953,
+        "text": "EXISTING METHOD",
+        "paragraphs": [
+          "EXISTING METHOD"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Google Shape;232;p6",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 838199,
+        "top": 2143431,
+        "width": 10714703,
+        "height": 4349443,
+        "text": "Existing eco-driving systems mainly focus on monitoring vehicle speed, acceleration, braking, and energy consumption to evaluate driving efficiency.\nSome systems use real-time driver feedback to encourage smooth acceleration, controlled speed, and efficient braking.\nAdvanced systems use optimization algorithms or machine learning techniques to identify energy-efficient driving patterns.\nThese methods can estimate battery consumption and driving range based on different driving behaviours.\nSome systems are tested using real vehicles or complex simulation environments under different road and traffic conditions.\nExisting methods help reduce unnecessary energy consumption and promote environmentally sustainable driving practices.",
+        "paragraphs": [
+          "Existing eco-driving systems mainly focus on monitoring vehicle speed, acceleration, braking, and energy consumption to evaluate driving efficiency.",
+          "Some systems use real-time driver feedback to encourage smooth acceleration, controlled speed, and efficient braking.",
+          "Advanced systems use optimization algorithms or machine learning techniques to identify energy-efficient driving patterns.",
+          "These methods can estimate battery consumption and driving range based on different driving behaviours.",
+          "Some systems are tested using real vehicles or complex simulation environments under different road and traffic conditions.",
+          "Existing methods help reduce unnecessary energy consumption and promote environmentally sustainable driving practices."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Google Shape;233;p6",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;234;p6",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10093932,
+        "top": 102758,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;235;p6",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 7678737,
+        "top": 6248400,
+        "width": 2743200,
+        "height": 365125,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Google Shape;236;p6",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913774,
+        "top": 6248400,
+        "width": 6672887,
+        "height": 365125,
+        "text": "REVIEW PRESENTATION ",
+        "paragraphs": [
+          "REVIEW PRESENTATION "
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Google Shape;237;p6",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10489246,
+        "top": 6248400,
+        "width": 764215,
+        "height": 365125,
+        "text": "6",
+        "paragraphs": [
+          "6"
+        ]
+      }
+    ]
+  },
+  {
+    "slide_num": 7,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Google Shape;242;p7",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 589542,
+        "top": 872843,
+        "width": 10764258,
+        "height": 845114,
+        "text": "PROPOSED METHOD",
+        "paragraphs": [
+          "PROPOSED METHOD"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Google Shape;243;p7",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 476532,
+        "top": 1897166,
+        "width": 10877268,
+        "height": 4279797,
+        "text": "Develop a code-based eco-driving simulation for electric vehicles to help users practice energy-efficient driving techniques.\nMonitor vehicle speed, acceleration, braking, battery level, and energy consumption during the simulation.\nCalculate an eco-driving score based on the user's driving behaviour and energy efficiency.\nProvide real-time feedback to encourage smooth acceleration, controlled speed, and efficient braking.\nDisplay the effects of driving behaviour on battery usage, energy consumption, and EV driving range, promoting sustainable driving habits.",
+        "paragraphs": [
+          "Develop a code-based eco-driving simulation for electric vehicles to help users practice energy-efficient driving techniques.",
+          "Monitor vehicle speed, acceleration, braking, battery level, and energy consumption during the simulation.",
+          "Calculate an eco-driving score based on the user's driving behaviour and energy efficiency.",
+          "Provide real-time feedback to encourage smooth acceleration, controlled speed, and efficient braking.",
+          "Display the effects of driving behaviour on battery usage, energy consumption, and EV driving range, promoting sustainable driving habits."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Google Shape;244;p7",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;245;p7",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;246;p7",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 7678737,
+        "top": 5883275,
+        "width": 2743200,
+        "height": 365125,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Google Shape;247;p7",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913774,
+        "top": 5883275,
+        "width": 6672887,
+        "height": 365125,
+        "text": "REVIEW PRESENTATION ",
+        "paragraphs": [
+          "REVIEW PRESENTATION "
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Google Shape;248;p7",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "7",
+        "paragraphs": [
+          "7"
+        ]
+      }
+    ]
+  },
+  {
+    "slide_num": 8,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Google Shape;253;p8",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 589542,
+        "top": 872843,
+        "width": 10764258,
+        "height": 845114,
+        "text": "BLOCK DIAGRAM ",
+        "paragraphs": [
+          "BLOCK DIAGRAM "
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Google Shape;254;p8",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 476532,
+        "top": 1897166,
+        "width": 10877268,
+        "height": 4279797,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Google Shape;255;p8",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;256;p8",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;257;p8",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 7662227,
+        "top": 6309360,
+        "width": 2743200,
+        "height": 365125,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Google Shape;258;p8",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 839479,
+        "top": 6309360,
+        "width": 6672887,
+        "height": 365125,
+        "text": "REVIEW PRESENTATION ",
+        "paragraphs": [
+          "REVIEW PRESENTATION "
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Google Shape;259;p8",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10503851,
+        "top": 6313170,
+        "width": 764215,
+        "height": 365125,
+        "text": "8",
+        "paragraphs": [
+          "8"
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Picture 0",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476885,
+        "top": 1818640,
+        "width": 10877550,
+        "height": 4359910
+      }
+    ]
+  },
+  {
+    "slide_num": 9,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Google Shape;264;p9",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 589542,
+        "top": 872843,
+        "width": 10764258,
+        "height": 845114,
+        "text": "COMPONENTS DETAILS",
+        "paragraphs": [
+          "COMPONENTS DETAILS"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Google Shape;265;p9",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 476532,
+        "top": 1897166,
+        "width": 10877268,
+        "height": 4279797,
+        "text": "User Input Module – Accepts keyboard controls such as acceleration, braking, reversing, and steering to control the EV.\nVehicle Simulation Module – Simulates the movement and basic driving behavior of the electric vehicle using code.\nEnvironment Module – Provides different road conditions such as city roads, highways, hills, and mountain roads along with weather conditions.\nVehicle Control Module – Manages vehicle speed, acceleration, braking, steering, and movement based on user input.\nMonitoring Module – Monitors speed, battery level, distance travelled, energy consumption, acceleration, and braking behavior.\nEnergy Management Module – Calculates battery consumption according to vehicle speed, acceleration, braking, distance, and driving conditions.\nEco-Driving Score Module – Calculates the user's eco-driving score based on efficient speed control, smooth acceleration, braking, and energy usage.\nFeedback Module – Displays the eco-driving score and provides suggestions to improve driving efficiency.\nData Storage Module – Stores driving session details, battery usage, energy consumption, scores, and performance statistics.\nOutput Module – Displays the final eco-driving score, battery usage, energy efficiency, driving performance, and estimated driving range.",
+        "paragraphs": [
+          "User Input Module – Accepts keyboard controls such as acceleration, braking, reversing, and steering to control the EV.",
+          "Vehicle Simulation Module – Simulates the movement and basic driving behavior of the electric vehicle using code.",
+          "Environment Module – Provides different road conditions such as city roads, highways, hills, and mountain roads along with weather conditions.",
+          "Vehicle Control Module – Manages vehicle speed, acceleration, braking, steering, and movement based on user input.",
+          "Monitoring Module – Monitors speed, battery level, distance travelled, energy consumption, acceleration, and braking behavior.",
+          "Energy Management Module – Calculates battery consumption according to vehicle speed, acceleration, braking, distance, and driving conditions.",
+          "Eco-Driving Score Module – Calculates the user's eco-driving score based on efficient speed control, smooth acceleration, braking, and energy usage.",
+          "Feedback Module – Displays the eco-driving score and provides suggestions to improve driving efficiency.",
+          "Data Storage Module – Stores driving session details, battery usage, energy consumption, scores, and performance statistics.",
+          "Output Module – Displays the final eco-driving score, battery usage, energy efficiency, driving performance, and estimated driving range."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Google Shape;266;p9",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;267;p9",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;268;p9",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 7678737,
+        "top": 5883275,
+        "width": 2743200,
+        "height": 365125,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Google Shape;269;p9",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 839479,
+        "top": 6381115,
+        "width": 6672887,
+        "height": 365125,
+        "text": "REVIEW PRESENTATION ",
+        "paragraphs": [
+          "REVIEW PRESENTATION "
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Google Shape;270;p9",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 6452870,
+        "width": 764215,
+        "height": 365125,
+        "text": "9",
+        "paragraphs": [
+          "9"
+        ]
+      }
+    ]
+  },
+  {
+    "slide_num": 10,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Google Shape;275;p10",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 589542,
+        "top": 872843,
+        "width": 10764258,
+        "height": 845114,
+        "text": "SOFTWARE / TOOLS ",
+        "paragraphs": [
+          "SOFTWARE / TOOLS "
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Google Shape;276;p10",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 476532,
+        "top": 1897166,
+        "width": 10877268,
+        "height": 4279797,
+        "text": "Visual Studio Code (VS Code) – Main development environment used to write, edit, and manage the project code.\nHTML – Used to create the structure of the simulation interface and user controls.\nCSS – Used to design the interface, vehicle display, dashboard, and visual elements.\nJavaScript – Used to implement vehicle movement, keyboard controls, battery calculation, energy consumption, and eco-driving logic.\nWeb Browser – Used to run and test the code-based simulation and display the user interface.\nJavaScript Animation / Canvas – Used to create the vehicle movement and simulation environment without using Unity or 3D models.\nLocal Storage / JSON – Used to store driving sessions, scores, battery usage, and performance data.\nVS Code Extensions – Used for code editing, debugging, and running the web-based simulation efficiently.",
+        "paragraphs": [
+          "Visual Studio Code (VS Code) – Main development environment used to write, edit, and manage the project code.",
+          "HTML – Used to create the structure of the simulation interface and user controls.",
+          "CSS – Used to design the interface, vehicle display, dashboard, and visual elements.",
+          "JavaScript – Used to implement vehicle movement, keyboard controls, battery calculation, energy consumption, and eco-driving logic.",
+          "Web Browser – Used to run and test the code-based simulation and display the user interface.",
+          "JavaScript Animation / Canvas – Used to create the vehicle movement and simulation environment without using Unity or 3D models.",
+          "Local Storage / JSON – Used to store driving sessions, scores, battery usage, and performance data.",
+          "VS Code Extensions – Used for code editing, debugging, and running the web-based simulation efficiently."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Google Shape;277;p10",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;278;p10",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;279;p10",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 7678737,
+        "top": 5883275,
+        "width": 2743200,
+        "height": 365125,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Google Shape;280;p10",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913774,
+        "top": 5883275,
+        "width": 6672887,
+        "height": 365125,
+        "text": "REVIEW PRESENTATION ",
+        "paragraphs": [
+          "REVIEW PRESENTATION "
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Google Shape;281;p10",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "10",
+        "paragraphs": [
+          "10"
+        ]
+      }
+    ]
+  },
+  {
+    "slide_num": 11,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Title 1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 618517,
+        "width": 10364451,
+        "height": 1596177,
+        "text": "LIST OF MODULES",
+        "paragraphs": [
+          "LIST OF MODULES"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Text Placeholder 2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 2367093,
+        "width": 10364452,
+        "height": 3424107,
+        "text": "1. Vehicle Simulation and City Environment Module.\n2. Dynamic Weather and Driving Monitoring Module.\n3. Performance Evaluation and Feedback Module.",
+        "paragraphs": [
+          "1. Vehicle Simulation and City Environment Module.",
+          "2. Dynamic Weather and Driving Monitoring Module.",
+          "3. Performance Evaluation and Feedback Module."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Slide Number Placeholder 3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "11",
+        "paragraphs": [
+          "11"
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;277;p10",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;278;p10",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      }
+    ]
+  },
+  {
+    "slide_num": 12,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Title 1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 618517,
+        "width": 10364451,
+        "height": 1596177,
+        "text": "MODULE DESCRIPTION",
+        "paragraphs": [
+          "MODULE DESCRIPTION"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Text Placeholder 2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 2367093,
+        "width": 10364452,
+        "height": 3424107,
+        "text": "1. Vehicle Simulation and City Environment Module\nThis module provides an interactive city-road environment for practising EV driving. It allows users to select an electric car or bike and perform basic operations such as acceleration, braking, steering, and reversing. The environment includes roads, traffic signals, pedestrians, zebra crossings, buildings, and other vehicles to create a realistic urban driving experience.\n2. Dynamic Weather and Driving Monitoring Module\nThis module simulates changing weather conditions, automatically transitioning from sunny to rainy weather during driving. It monitors important vehicle parameters such as speed, battery percentage, distance travelled, and eco score through a Heads-Up Display (HUD). It also helps users understand how weather conditions and driving behaviour affect road safety and battery consumption.\n3. Performance Evaluation and Feedback Module\nThis module evaluates the user's driving performance based on speed control, acceleration, braking, traffic-rule compliance, and battery usage. It calculates the safety and eco-driving scores and generates performance feedback. The feedback helps users identify driving mistakes, improve energy efficiency, and develop safe and responsible driving habits.",
+        "paragraphs": [
+          "1. Vehicle Simulation and City Environment Module",
+          "This module provides an interactive city-road environment for practising EV driving. It allows users to select an electric car or bike and perform basic operations such as acceleration, braking, steering, and reversing. The environment includes roads, traffic signals, pedestrians, zebra crossings, buildings, and other vehicles to create a realistic urban driving experience.",
+          "2. Dynamic Weather and Driving Monitoring Module",
+          "This module simulates changing weather conditions, automatically transitioning from sunny to rainy weather during driving. It monitors important vehicle parameters such as speed, battery percentage, distance travelled, and eco score through a Heads-Up Display (HUD). It also helps users understand how weather conditions and driving behaviour affect road safety and battery consumption.",
+          "3. Performance Evaluation and Feedback Module",
+          "This module evaluates the user's driving performance based on speed control, acceleration, braking, traffic-rule compliance, and battery usage. It calculates the safety and eco-driving scores and generates performance feedback. The feedback helps users identify driving mistakes, improve energy efficiency, and develop safe and responsible driving habits."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Slide Number Placeholder 3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "12",
+        "paragraphs": [
+          "12"
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;278;p10",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;277;p10",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      }
+    ]
+  },
+  {
+    "slide_num": 13,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Google Shape;286;p11",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 589542,
+        "top": 872843,
+        "width": 10764258,
+        "height": 845114,
+        "text": "OUTPUT",
+        "paragraphs": [
+          "OUTPUT"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Google Shape;287;p11",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 476532,
+        "top": 1897166,
+        "width": 10877268,
+        "height": 4279797,
+        "text": "                           \n\n\n\n\n\n\n\n\n\n3D Driving Environment and Vehicle Simulation\n",
+        "paragraphs": [
+          "                           ",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "3D Driving Environment and Vehicle Simulation",
+          ""
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Google Shape;288;p11",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;289;p11",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;290;p11",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 7662227,
+        "top": 6272530,
+        "width": 2743200,
+        "height": 365125,
+        "text": "",
+        "paragraphs": [
+          ""
+        ]
+      },
+      {
+        "index": 5,
+        "name": "Google Shape;291;p11",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 839479,
+        "top": 6272530,
+        "width": 6672887,
+        "height": 365125,
+        "text": "REVIEW PRESENTATION ",
+        "paragraphs": [
+          "REVIEW PRESENTATION "
+        ]
+      },
+      {
+        "index": 6,
+        "name": "Google Shape;292;p11",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10489246,
+        "top": 6272530,
+        "width": 764215,
+        "height": 365125,
+        "text": "13",
+        "paragraphs": [
+          "13"
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Picture 0",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 1942465,
+        "top": 1987550,
+        "width": 8307070,
+        "height": 3543300
+      }
+    ]
+  },
+  {
+    "slide_num": 14,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Title 1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 618517,
+        "width": 10364451,
+        "height": 1596177,
+        "text": "OUTPUT",
+        "paragraphs": [
+          "OUTPUT"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Text Placeholder 2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913765,
+        "top": 1686560,
+        "width": 10364470,
+        "height": 4222750,
+        "text": "\n\n\n\n\n\n\n\nBattery Monitoring and Eco-Driving Analysis",
+        "paragraphs": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Battery Monitoring and Eco-Driving Analysis"
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Slide Number Placeholder 3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "14",
+        "paragraphs": [
+          "14"
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;288;p11",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;289;p11",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 5,
+        "name": "Picture 4",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 2029460,
+        "top": 1772920,
+        "width": 7837170,
+        "height": 3650615
+      }
+    ]
+  },
+  {
+    "slide_num": 15,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Title 1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913765,
+        "top": 618490,
+        "width": 10364470,
+        "height": 1179830,
+        "text": "OUTPUT",
+        "paragraphs": [
+          "OUTPUT"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Text Placeholder 2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913765,
+        "top": 1831340,
+        "width": 10364470,
+        "height": 4271010,
+        "text": "\n\n\n\n\n\n\n\nPerformance Report",
+        "paragraphs": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "Performance Report"
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Slide Number Placeholder 3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "15",
+        "paragraphs": [
+          "15"
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;288;p11",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;289;p11",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 5,
+        "name": "Picture 4",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 2175510,
+        "top": 1779270,
+        "width": 7566025,
+        "height": 3761740
+      }
+    ]
+  },
+  {
+    "slide_num": 16,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Title 1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 618517,
+        "width": 10364451,
+        "height": 1596177,
+        "text": "CONCLUSION",
+        "paragraphs": [
+          "CONCLUSION"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Text Placeholder 2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 2367093,
+        "width": 10364452,
+        "height": 3424107,
+        "text": "The Simulation-Based Eco-Driving Training System for Electric Vehicles was developed to help users learn safe and energy-efficient driving practices through a software-based simulation. The system provides an interactive city-road environment with essential driving controls such as acceleration, braking, steering, and reversing, along with traffic signals, pedestrians, road crossings, buildings, and other vehicles to create a realistic urban driving experience. It integrates a dynamic weather module that automatically changes environmental conditions between sunny and rainy weather during the simulation. A Heads-Up Display (HUD) provides essential driving information, including vehicle speed, battery percentage, eco score, and distance travelled. The system also monitors driving performance based on speed limits, safe driving practices, and battery consumption, helping users understand the importance of energy-efficient driving. Overall, the proposed system provides a practical and interactive platform for learning eco-driving techniques without requiring a physical electric vehicle or specialized simulation hardware. It helps users understand the relationship between driving behaviour, battery usage, road safety, and energy conservation while encouraging responsible driving habits and improving awareness of electric vehicle efficiency.",
+        "paragraphs": [
+          "The Simulation-Based Eco-Driving Training System for Electric Vehicles was developed to help users learn safe and energy-efficient driving practices through a software-based simulation. The system provides an interactive city-road environment with essential driving controls such as acceleration, braking, steering, and reversing, along with traffic signals, pedestrians, road crossings, buildings, and other vehicles to create a realistic urban driving experience. It integrates a dynamic weather module that automatically changes environmental conditions between sunny and rainy weather during the simulation. A Heads-Up Display (HUD) provides essential driving information, including vehicle speed, battery percentage, eco score, and distance travelled. The system also monitors driving performance based on speed limits, safe driving practices, and battery consumption, helping users understand the importance of energy-efficient driving. Overall, the proposed system provides a practical and interactive platform for learning eco-driving techniques without requiring a physical electric vehicle or specialized simulation hardware. It helps users understand the relationship between driving behaviour, battery usage, road safety, and energy conservation while encouraging responsible driving habits and improving awareness of electric vehicle efficiency."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Slide Number Placeholder 3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "16",
+        "paragraphs": [
+          "16"
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;277;p10",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;289;p11",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      }
+    ]
+  },
+  {
+    "slide_num": 17,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Title 1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 618517,
+        "width": 10364451,
+        "height": 1596177,
+        "text": "Future Enhancement",
+        "paragraphs": [
+          "Future Enhancement"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Text Placeholder 2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 2367093,
+        "width": 10364452,
+        "height": 3424107,
+        "text": "The proposed Simulation-Based Eco-Driving Training System for Electric Vehicles can be further enhanced by integrating Artificial Intelligence (AI) to analyse driving behaviour and provide personalized recommendations. Realistic 3D environments and improved traffic simulations can be introduced to enhance the user experience. A user login system and cloud-based database can be developed to store driving history, eco scores, and training progress. Multiplayer functionality and different difficulty levels can be implemented to support interactive learning. Furthermore, detailed performance reports can help improve safety awareness and learning outcomes. These enhancements can make the system more realistic, intelligent, and effective in promoting energy-efficient driving and sustainable electric transportation.",
+        "paragraphs": [
+          "The proposed Simulation-Based Eco-Driving Training System for Electric Vehicles can be further enhanced by integrating Artificial Intelligence (AI) to analyse driving behaviour and provide personalized recommendations. Realistic 3D environments and improved traffic simulations can be introduced to enhance the user experience. A user login system and cloud-based database can be developed to store driving history, eco scores, and training progress. Multiplayer functionality and different difficulty levels can be implemented to support interactive learning. Furthermore, detailed performance reports can help improve safety awareness and learning outcomes. These enhancements can make the system more realistic, intelligent, and effective in promoting energy-efficient driving and sustainable electric transportation."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Slide Number Placeholder 3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "17",
+        "paragraphs": [
+          "17"
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;289;p11",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;277;p10",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      }
+    ]
+  },
+  {
+    "slide_num": 18,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Title 1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 618517,
+        "width": 10364451,
+        "height": 1596177,
+        "text": "MAPPING WITH SDG",
+        "paragraphs": [
+          "MAPPING WITH SDG"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Text Placeholder 2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 2367093,
+        "width": 10364452,
+        "height": 3424107,
+        "text": "1. SDG 7 – Affordable and Clean Energy\n2. SDG 11 – Sustainable Cities and Communities\n3. SDG 12 – Responsible Consumption and Production\n4. SDG 13 – Climate Action",
+        "paragraphs": [
+          "1. SDG 7 – Affordable and Clean Energy",
+          "2. SDG 11 – Sustainable Cities and Communities",
+          "3. SDG 12 – Responsible Consumption and Production",
+          "4. SDG 13 – Climate Action"
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Slide Number Placeholder 3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "18",
+        "paragraphs": [
+          "18"
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;277;p10",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;289;p11",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      }
+    ]
+  },
+  {
+    "slide_num": 19,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Title 1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 618517,
+        "width": 10364451,
+        "height": 1596177,
+        "text": "REFERENCES",
+        "paragraphs": [
+          "REFERENCES"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Text Placeholder 2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913765,
+        "top": 2367280,
+        "width": 10364470,
+        "height": 3641090,
+        "text": "[1] A. Galvin, ―Energy consumption effects of speed and acceleration in electric vehicles: Laboratory case studies and implications for drivers and policymakers,‖ Transportation Research Part D: Transport and Environment, vol. 52, pp. 234–248, Jun. 2017, doi: 10.1016/j.trd.2017.04.020. \n[2] ―The influence of driving patterns on energy consumption in electric car driving and the role of regenerative braking,‖ Transportation Research Procedia, vol. 22, pp. 174–182, 2017, doi: 10.1016/j.trpro.2017.03.024. \n[3] Y. Huang, E. C. Y. Ng, J. L. Zhou, N. C. Surawski, E. F. C. Chan, and G. Hong, ―Eco-driving technology for sustainable road transport: A review,‖ Renewable and Sustainable Energy Reviews, vol. 93, pp. 596–609, Oct. 2018, doi: 10.1016/j.rser.2018.05.030. \n[4] R. Tu, J. Xu, T. Li, and H. Chen, ―Effective and acceptable eco-driving guidance for human-driving vehicles: A review,‖ International Journal of Environmental Research and Public Health, vol. 19, no. 12, Art. no. 7310, Jun. 2022, doi: 10.3390/ijerph19127310. \n[5] E. A. Grunditz and T. Thiringer, ―Characterizing BEV powertrain energy consumption, efficiency, and range during official and drive cycles from Gothenburg, Sweden,‖ IEEE Transactions on Vehicular Technology, vol. 65, no. 6, pp. 3964–3980, Jun. 2016, doi: 10.1109/TVT.2015.2492239.",
+        "paragraphs": [
+          "[1] A. Galvin, ―Energy consumption effects of speed and acceleration in electric vehicles: Laboratory case studies and implications for drivers and policymakers,‖ Transportation Research Part D: Transport and Environment, vol. 52, pp. 234–248, Jun. 2017, doi: 10.1016/j.trd.2017.04.020. ",
+          "[2] ―The influence of driving patterns on energy consumption in electric car driving and the role of regenerative braking,‖ Transportation Research Procedia, vol. 22, pp. 174–182, 2017, doi: 10.1016/j.trpro.2017.03.024. ",
+          "[3] Y. Huang, E. C. Y. Ng, J. L. Zhou, N. C. Surawski, E. F. C. Chan, and G. Hong, ―Eco-driving technology for sustainable road transport: A review,‖ Renewable and Sustainable Energy Reviews, vol. 93, pp. 596–609, Oct. 2018, doi: 10.1016/j.rser.2018.05.030. ",
+          "[4] R. Tu, J. Xu, T. Li, and H. Chen, ―Effective and acceptable eco-driving guidance for human-driving vehicles: A review,‖ International Journal of Environmental Research and Public Health, vol. 19, no. 12, Art. no. 7310, Jun. 2022, doi: 10.3390/ijerph19127310. ",
+          "[5] E. A. Grunditz and T. Thiringer, ―Characterizing BEV powertrain energy consumption, efficiency, and range during official and drive cycles from Gothenburg, Sweden,‖ IEEE Transactions on Vehicular Technology, vol. 65, no. 6, pp. 3964–3980, Jun. 2016, doi: 10.1109/TVT.2015.2492239."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Slide Number Placeholder 3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "19",
+        "paragraphs": [
+          "19"
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;289;p11",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;277;p10",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      }
+    ]
+  },
+  {
+    "slide_num": 20,
+    "shapes": [
+      {
+        "index": 0,
+        "name": "Title 1",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913775,
+        "top": 618517,
+        "width": 10364451,
+        "height": 1596177,
+        "text": "REFERENCES",
+        "paragraphs": [
+          "REFERENCES"
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Text Placeholder 2",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 913765,
+        "top": 1812290,
+        "width": 10364470,
+        "height": 4148455,
+        "text": "[6] W. Vaz, A. K. Nandi, and U. O. Koylu, ―A multiobjective approach to find optimal electric-vehicle acceleration: Simultaneous minimization of acceleration duration and energy consumption,‖ IEEE Transactions on Vehicular Technology, vol. 65, no. 6, pp. 4633–4644, Jun. 2016, doi: 10.1109/TVT.2015.2497246. \n[7] I. Neumann, T. Franke, P. Cocron, F. Bühler, and J. F. Krems, ―Eco-driving strategies in battery electric vehicle use—How do drivers adapt over time?‖ IET Intelligent Transport Systems, vol. 9, pp. 746–753, 2015, doi: 10.1049/iet-its.2014.0221. \n[8] J. Li, A. Fotouhi, Y. Liu, Y. Zhang, and Z. Chen, ―Review on eco-driving control for connected and automated vehicles,‖ Renewable and Sustainable Energy Reviews, vol. 189, Art. no. 114025, 2024, doi:10.1016/j.rser.2023.114025.\n[9] I. Park, C. Kim, H. Lee, et al., ―Comprehensive analysis of battery thermal management and energy consumption in an electric vehicle: Impact of driving modes and ambient temperatures,‖ International Journal of Automotive Technology, vol. 26, pp. 621–636, 2025, doi: 10.1007/s12239-024-00202-8. \n[10] T. Jayson, A. S. M. Bakibillah, C. P. Tan, M. A. S. Kamal, V. Monn, and J. I. Imura, ―Electric vehicle eco-driving strategy at signalized intersections based on optimal energy consumption,‖ Journal of Environmental Management, vol. 368, Art. no. 122245, 2024, doi: 10.1016/j.jenvman.2024.122245.",
+        "paragraphs": [
+          "[6] W. Vaz, A. K. Nandi, and U. O. Koylu, ―A multiobjective approach to find optimal electric-vehicle acceleration: Simultaneous minimization of acceleration duration and energy consumption,‖ IEEE Transactions on Vehicular Technology, vol. 65, no. 6, pp. 4633–4644, Jun. 2016, doi: 10.1109/TVT.2015.2497246. ",
+          "[7] I. Neumann, T. Franke, P. Cocron, F. Bühler, and J. F. Krems, ―Eco-driving strategies in battery electric vehicle use—How do drivers adapt over time?‖ IET Intelligent Transport Systems, vol. 9, pp. 746–753, 2015, doi: 10.1049/iet-its.2014.0221. ",
+          "[8] J. Li, A. Fotouhi, Y. Liu, Y. Zhang, and Z. Chen, ―Review on eco-driving control for connected and automated vehicles,‖ Renewable and Sustainable Energy Reviews, vol. 189, Art. no. 114025, 2024, doi:10.1016/j.rser.2023.114025.",
+          "[9] I. Park, C. Kim, H. Lee, et al., ―Comprehensive analysis of battery thermal management and energy consumption in an electric vehicle: Impact of driving modes and ambient temperatures,‖ International Journal of Automotive Technology, vol. 26, pp. 621–636, 2025, doi: 10.1007/s12239-024-00202-8. ",
+          "[10] T. Jayson, A. S. M. Bakibillah, C. P. Tan, M. A. S. Kamal, V. Monn, and J. I. Imura, ―Electric vehicle eco-driving strategy at signalized intersections based on optimal energy consumption,‖ Journal of Environmental Management, vol. 368, Art. no. 122245, 2024, doi: 10.1016/j.jenvman.2024.122245."
+        ]
+      },
+      {
+        "index": 2,
+        "name": "Slide Number Placeholder 3",
+        "shape_type": "PLACEHOLDER (14)",
+        "has_text": true,
+        "left": 10514011,
+        "top": 5883275,
+        "width": 764215,
+        "height": 365125,
+        "text": "20",
+        "paragraphs": [
+          "20"
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Google Shape;289;p11",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 10404987,
+        "top": 31008,
+        "width": 1621536,
+        "height": 1294829
+      },
+      {
+        "index": 4,
+        "name": "Google Shape;277;p10",
+        "shape_type": "PICTURE (13)",
+        "has_text": false,
+        "left": 476532,
+        "top": 204946,
+        "width": 2385028,
+        "height": 1090454
+      }
+    ]
+  }
+]

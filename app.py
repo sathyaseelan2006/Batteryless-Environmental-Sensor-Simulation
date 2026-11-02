@@ -306,32 +306,6 @@ with st.container():
             key="live_sun_slider",
             help="Solar irradiance at Earth's surface (AM1.5 spectrum). Clear solar noon is ~1000 W/m²."
         )
-        # Quick-set condition buttons
-        btn1, btn2, btn3, btn4, btn5, btn6 = st.columns(6)
-        if btn1.button("Noon (1050)", use_container_width=True):
-            st.session_state["live_sun_slider"] = 1050
-            st.session_state["cfg_peak_irradiance"] = 1050.0
-            st.rerun()
-        if btn2.button("Cloud (580)", use_container_width=True):
-            st.session_state["live_sun_slider"] = 580
-            st.session_state["cfg_peak_irradiance"] = 580.0
-            st.rerun()
-        if btn3.button("Storm (180)", use_container_width=True):
-            st.session_state["live_sun_slider"] = 180
-            st.session_state["cfg_peak_irradiance"] = 180.0
-            st.rerun()
-        if btn4.button("Shade (80)", use_container_width=True):
-            st.session_state["live_sun_slider"] = 80
-            st.session_state["cfg_peak_irradiance"] = 80.0
-            st.rerun()
-        if btn5.button("Night (0)", use_container_width=True):
-            st.session_state["live_sun_slider"] = 0
-            st.session_state["cfg_peak_irradiance"] = 0.0
-            st.rerun()
-        if btn6.button("Indoor (35)", use_container_width=True):
-            st.session_state["live_sun_slider"] = 35
-            st.session_state["cfg_peak_irradiance"] = 35.0
-            st.rerun()
 
     # Synchronize the slider with the simulation peak irradiance
     if float(live_sunlight) != float(st.session_state["cfg_peak_irradiance"]):
